@@ -1,3 +1,19 @@
+.brand-blue { background: linear-gradient(#4955ff, #2935FF) }
+.brand-blue .secondary-bg { background-color: #041029 }
+.brand-blue .accent-bg { background-color: #FF1C3F }
+.brand-blue .primary-color { color: #FFFFFF }
+.brand-blue .secondary-color { color: #D8E8FF }
+.brand-blue .svg-fill { fill: #FFFFFF }
+
+.brand-blue-flat { background-color: #2935FF }
+.brand-blue-flat .secondary-bg { background-color: #041029 }
+.brand-blue-flat .accent-bg { background-color: #FF1C3F }
+.brand-blue-flat .accent-bt { background-color: #FFCE00 }
+.brand-blue-flat .primary-color { color: #FFFFFF }
+.brand-blue-flat .secondary-color { color: #D8E8FF }
+.brand-blue-flat .svg-fill { fill: #FFFFFF }
+
+
 .chateruse-flat { background-color: #BDD155 }
 .chateruse-flat .secondary-bg { background-color: #6E7725 }
 .chateruse-flat .accent-bg { background-color: #778629 }
