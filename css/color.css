@@ -1,3 +1,5 @@
+.brand-blue-text { color: #2935FF }
+
 .brand-blue { background: linear-gradient(#4955ff, #2935FF) }
 .brand-blue .secondary-bg { background-color: #041029 }
 .brand-blue .accent-bg { background-color: #FF1C3F }
@@ -79,7 +81,7 @@
 .lightblue-white { background-color: #FFFFFF }
 .lightblue-white .secondary-bg { background-color: #D7F9FF }
 .lightblue-white .accent-bg { background-color: #297AFB }
-.lightblue-white .primary-color { color: #000000 }
+.lightblue-white .primary-color { color: #111111 }
 .lightblue-white .secondary-color { color: #8F8F8F }
 .lightblue-white .svg-fill { fill: #01D8FD }
 .black-flat { background-color: #000000 }
@@ -148,6 +150,6 @@
 .blue-white { background-color: #FFFFFF }
 .blue-white .secondary-bg { background-color: #D8E8FF }
 .blue-white .accent-bg { background-color: #00CC47 }
-.blue-white .primary-color { color: #000000 }
+.blue-white .primary-color { color: #111111 }
 .blue-white .secondary-color { color: #8F8F8F }
 .blue-white .svg-fill { fill: #0065FF }
