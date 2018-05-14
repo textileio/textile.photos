@@ -1,0 +1,21 @@
+{
+  "name": "sans-bureau-boiler",
+  "version": "1.0.0",
+  "description": "A boilerplate for our pure html/css/js projects",
+  "main": "index.js",
+  "repository": "git@github.com:sansbureau/sb-boiler.git",
+  "author": "keyserfaty <keserfaty@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "pushstate-server src && gulp",
+    "start:sass": "gulp",
+    "build": ""
+  },
+  "dependencies": {
+    "pushstate-server": "^3.0.1"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0"
+  }
+}

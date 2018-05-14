@@ -1,0 +1,523 @@
+@mixin animated {
+  animation-duration: 1.5s;
+  animation-fill-mode: both;
+}
+
+// Slide Left & Right
+.a--animated {
+  background: url('../images/color.svg') no-repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-position-x: 100%;
+  transition: background-position-x 0.5s ease;
+  position: relative;
+
+  &:hover {
+    background-position-x: 0;
+  }
+
+  &:hover:after {
+    width: 100%;
+    transition: width 0.3s ease;
+  }
+
+  &:after {
+    content: " ";
+    width: 0;
+    height: 2px;
+    background-color: #FEB8D6;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    transition: width 0.3s ease;
+  }
+}
+
+@keyframes slideLeftAnim {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    transform: translateX(-15%);
+  }
+}
+
+@keyframes slideRightAnim {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    transform: translateX(15%);
+  }
+}
+
+.sbFadeLeft {
+  animation-name: slideLeftAnim;
+  animation-duration: 0.5s;
+}
+
+.sbFadeRight {
+  animation-name: slideRightAnim;
+  animation-duration: 0.5s;
+}
+
+// Fade In Up
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.fadeInUp {
+  animation-name: fadeInUp;
+}
+
+// Fade In
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  animation-name: fadeIn;
+}
+
+// Fade Out Left
+
+
+@keyframes fadeOutLeft {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+
+.fadeOutLeft {
+  animation-name: fadeOutLeft;
+}
+
+// Fade In Left Big
+
+@-webkit-keyframes fadeInLeftBig {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-2000px);
+    transform: translateX(-2000px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+@keyframes fadeInLeftBig {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-2000px);
+    -ms-transform: translateX(-2000px);
+    transform: translateX(-2000px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+.fadeInLeftBig {
+  -webkit-animation-name: fadeInLeftBig;
+  animation-name: fadeInLeftBig;
+}
+
+
+
+
+// Rotating 
+
+@-webkit-keyframes rotating /* Safari and Chrome */ {
+  from {
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotating {
+  from {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+
+// Fade In Down
+
+@-webkit-keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0px, 24px, 0px);
+    transform: translate3d(0px, 24px, 0px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0px, 24px, 0px);
+    -ms-transform: translate3d(0px, 24px, 0px);
+    transform: translate3d(0px, 24px, 0px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+  }
+}
+.fadeInDown {
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+}
+
+@-webkit-keyframes fadeInDown7 {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0px, 24px, 0px);
+    transform: translate3d(0px, 24px, 0px);
+  }
+  100% {
+    opacity: 0.7;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+@keyframes fadeInDown7 {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0px, 24px, 0px);
+    -ms-transform: translate3d(0px, 24px, 0px);
+    transform: translate3d(0px, 24px, 0px);
+  }
+  100% {
+    opacity: 0.7;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+  }
+}
+.fadeInDown7 {
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+}
+
+// Fade In Left
+
+@-webkit-keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-24px);
+    transform: translateX(-24px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-24px);
+    -ms-transform: translateX(-24px);
+    transform: translateX(-24px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+.fadeInLeft {
+  -webkit-animation-name: fadeInLeft;
+  animation-name: fadeInLeft;
+}
+
+// Fade In Right
+
+@-webkit-keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(56px);
+    transform: translateX(56px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(56px);
+    -ms-transform: translateX(56px);
+    transform: translateX(56px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+.fadeInRight {
+  -webkit-animation-name: fadeInRight;
+  animation-name: fadeInRight;
+}
+
+// Slide Down
+
+@-webkit-keyframes SlideDown {
+  0% {
+    -webkit-transform: translate3d(0px, 24px, 0px);
+    transform: translate3d(0px, 24px, 0px);
+  }
+  100% {
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+@keyframes SlideDown {
+  0% {
+    -webkit-transform: translate3d(0px, 24px, 0px);
+    -ms-transform: translate3d(0px, 24px, 0px);
+    transform: translate3d(0px, 24px, 0px);
+  }
+  100% {
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+  }
+}
+.SlideDown {
+  -webkit-animation-name: SlideDown;
+  animation-name: SlideDown;
+}
+
+// Grow Left
+
+@-webkit-keyframes growLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+@keyframes growLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: scaleX(0);
+    -ms-transform: scaleX(0);
+    transform: scaleX(0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scaleX(1);
+    -ms-transform: scaleX(1);
+    transform: scaleX(1);
+  }
+}
+.growLeft {
+  -webkit-animation-name: growLeft;
+  animation-name: growLeft;
+}
+
+
+// ------------- Hover States
+
+// Sweep to Top
+
+@mixin sweepTop {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+
+  &:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #09152B;
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
+    -webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: white;
+  }
+
+  &:hover:before,
+  &:focus:before,
+  &:active:before {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+  }
+}
+
+// Sweep to Right
+
+@mixin sweepRight {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+
+  &:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #F5F7FA;
+    border-radius: 4px;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: 0 50%;
+    transform-origin: 0 50%;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: #0A1933;
+  }
+
+  &:hover:before,
+  &:focus:before,
+  &:active:before {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+  }
+}
+
+// Grow
+
+@mixin grow {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+
+  &:hover,
+  &:focus,
+  &:active {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+  }
+}
+
+// Fade
+
+@mixin fade {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  overflow: hidden;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: color, background-color;
+  transition-property: color, background-color;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: darken(#2978FF, 10%);
+    color: white;
+  }
+}

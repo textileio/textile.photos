@@ -1,0 +1,157 @@
+h1 {
+  font-family: 'Rubik', sans-serif;
+  font-size: 2.074rem;
+  color: #2E364E;
+  letter-spacing: 0.5px;
+  line-height: 1.5em;
+  font-weight: 700;
+
+  @media screen and (min-width: 1024px) {
+    font-size: 2.441rem;
+  }
+}
+
+h2 {
+  font-family: 'Rubik', sans-serif;
+  font-size: 1.728rem;
+  color: #2E364E;
+  letter-spacing: 0.5px;
+  line-height: 1.25em;
+  font-weight: 500;
+
+  @media screen and (min-width: 768px) {
+    font-size: 1.953rem;
+    letter-spacing: 1px;
+    line-height: 1.5em;
+  }
+}
+
+h3 {
+  font-family: 'Rubik', sans-serif;
+  font-size: 1.44rem;
+  color: #2E364E;
+  letter-spacing: 0.5px;
+  line-height: 1.5em;
+  font-weight: 500;
+
+  @media screen and (min-width: 768px) {
+    font-size: 1.563rem;
+    letter-spacing: 0.68px;
+  }
+}
+
+h4 {
+  font-family: 'Rubik', sans-serif;
+  font-size: 1.2rem;
+  color: #2E364E;
+  letter-spacing: 0.5px;
+  line-height: 1.5em;
+  font-weight: 400;
+
+  @media screen and (min-width: 768px) {
+    font-size: 1.25rem;
+    letter-spacing: 0.53px;
+  }
+}
+
+h5 {
+  font-family: 'Rubik', sans-serif;
+  font-size: 1rem;
+  color: #2E364E;
+  letter-spacing: 0.5px;
+  line-height: 1.5em;
+  font-weight: 400;
+}
+
+p, label {
+  font-family: 'Rubik', sans-serif;
+  font-size: 1rem;
+  color: #828695;
+  letter-spacing: 0.5px;
+  line-height: 1.6;
+  font-weight: 400;
+}
+
+.hero-title {
+  font-family: 'Rubik', sans-serif;
+  font-size: 1.875rem;
+  color: #2E364E;
+  letter-spacing: 0;
+  line-height: 1.00em;
+  font-weight: 700;
+
+  @media screen and (min-width: 768px) {
+    font-size: 2.375rem;
+    line-height: 1.00em;
+  }
+
+  @media screen and (min-width: 1024px) {
+    font-size: 2.75rem;
+    line-height: 1.02em;
+  }
+}
+
+.hero-content {
+  opacity: 0.6;
+  font-family: Montserrat-Regular, sans-serif;
+  font-size: 1.125rem;
+  color: #2E364E;
+  letter-spacing: 0;
+  line-height: 1.44em;
+
+  @media screen and (min-width: 768px) {
+    opacity: 0.6;
+    font-size: 1.25rem;
+    line-height: 1.50em;
+  }
+
+  @media screen and (min-width: 1024px) {
+    opacity: 0.6;
+    font-size: 1.35rem;
+    line-height: 1.57em;
+  }
+}
+
+.cards-title {
+  font-family: 'Rubik', sans-serif;
+  font-size: 1.1875rem;
+  color: #2E364E;
+  letter-spacing: 0.53px;
+  line-height: 1.05em;
+  font-weight: 500;
+}
+
+.body-link {
+  font-family: 'Rubik', sans-serif;
+  font-size: 0.875rem;
+  color: #2524FF;
+  letter-spacing: 0;
+  font-weight: 500;
+
+  @media screen and (min-width: 768px) {
+    font-size: 0.74375rem;
+  }
+
+  @media screen and (min-width: 1024px) {
+    font-size: 1rem;
+    letter-spacing: 0.77px;
+    line-height: 1.56em;
+  }
+}
+
+.card-link {
+  font-family: 'Rubik', sans-serif;
+  font-size: 0.75rem;
+  color: #2524FF;
+  letter-spacing: 1.5px;
+  line-height: 1.67em;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 500;
+
+  @media screen and (min-width: 768px) {
+    font-size: 0.875rem;
+    letter-spacing: 1.75px;
+    line-height: 1.43em;
+  }
+}

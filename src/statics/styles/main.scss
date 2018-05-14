@@ -1,0 +1,41 @@
+@import "reset";
+@import "typography";
+@import "utilities";
+@import "logo";
+@import "buttons";
+@import "components";
+@import "icons";
+@import "animations";
+@import url('https://fonts.googleapis.com/css?family=Rubik:400,500,700');
+
+body {
+  background: url('../images/background.svg'), no-repeat;
+  background-size: cover;
+  background-position: 50%;
+  -webkit-font-smoothing:antialiased !important;
+}
+
+.container {
+  width: 100%;
+  padding: 0 24px;
+  box-sizing: border-box;
+  margin: 0 auto;
+
+  @media screen and (min-width: 520px) and (max-width: 768px) {
+    width: 80%;
+  }
+
+  @media screen and (min-width: 769px) {
+    max-width: 1024px;
+    padding: 0 20px;
+  }
+}
+
+input:focus, button:focus {
+  outline: none;
+}
+
+a {
+  color: $blue;
+  text-decoration: none;
+}

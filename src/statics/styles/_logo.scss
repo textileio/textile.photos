@@ -1,0 +1,8 @@
+.logo {
+  background: url('../images/logo/logo.svg'), no-repeat;
+  background-size: cover;
+  width: 130px;
+  height: 40px;
+
+  @media screen and (min-width: 768px) {}
+}

@@ -1,0 +1,19 @@
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <path d="M3.0116535,7.40170879 L7.04074482,8.40898162 C7.3136722,8.47721346 7.52677485,8.69031611 7.5950067,8.9632435 L8.60227953,12.9923348 L13.633843,2.37014535 L3.0116535,7.40170879 Z M6.2278274,9.77616092 L0.577156195,8.36349312 C-0.116760985,8.19001382 -0.210608626,7.24224466 0.435811062,6.93604586 L14.9092527,0.0802050655 C15.5561205,-0.226205988 16.2301943,0.447867794 15.9237833,1.09473557 L9.06794246,15.5681773 C8.76174366,16.2145969 7.8139745,16.1207493 7.6404952,15.4268321 L6.2278274,9.77616092 Z" id="path-1"></path>
+    </defs>
+    <g id="Responsive-&amp;-Guides" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="iPhone-8" transform="translate(-88.000000, -3462.000000)">
+            <g id="Technology-Matters" transform="translate(36.000000, 3190.000000)">
+                <g id="telegram" transform="translate(12.000000, 256.000000)">
+                    <g id="navigation" transform="translate(40.000000, 16.000000)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <use id="Shape" fill="#2524FF" fill-rule="nonzero" xlink:href="#path-1"></use>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

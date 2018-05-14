@@ -1,0 +1,23 @@
+.icon {
+  display: block;
+
+  &--github {
+    background: url('../images/github.svg') no-repeat;
+    background-size: cover;
+    width: 16px;
+    height: 16px;
+    transition: background 0.3s ease;
+    position: relative;
+    z-index: 1;
+  }
+
+  &--slack {
+    background: url('../images/slack.svg') no-repeat;
+    background-size: cover;
+    width: 19px;
+    height: 19px;
+    transition: background 0.3s ease;
+    position: relative;
+    z-index: 1;
+  }
+}
