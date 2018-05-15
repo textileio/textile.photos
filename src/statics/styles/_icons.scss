@@ -14,9 +14,73 @@
   &--slack {
     background: url('../images/slack.svg') no-repeat;
     background-size: cover;
-    width: 19px;
-    height: 19px;
+    width: 18px;
+    height: 18px;
     transition: background 0.3s ease;
+    position: relative;
+    z-index: 1;
+  }
+
+  &--camera {
+    background: url('../images/camera.svg') no-repeat;
+    background-size: cover;
+    width: 48px;
+    height: 48px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+  }
+
+  &--sync {
+    background: url('../images/sync.svg') no-repeat;
+    background-size: cover;
+    width: 48px;
+    height: 48px;
+    position: relative;
+    z-index: 1;
+  }
+
+  &--secure {
+    background: url('../images/secure.svg') no-repeat;
+    background-size: cover;
+    width: 48px;
+    height: 48px;
+    position: relative;
+    z-index: 1;
+  }
+
+  &--share {
+    background: url('../images/share.svg') no-repeat;
+    background-size: cover;
+    width: 48px;
+    height: 48px;
+    position: relative;
+    z-index: 1;
+  }
+
+  &--01 {
+    background: url('../images/1.svg') no-repeat;
+    background-size: cover;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    z-index: 1;
+  }
+
+  &--02 {
+    background: url('../images/2.svg') no-repeat;
+    background-size: cover;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    z-index: 1;
+  }
+
+  &--03 {
+    background: url('../images/3.svg') no-repeat;
+    background-size: cover;
+    width: 40px;
+    height: 40px;
     position: relative;
     z-index: 1;
   }

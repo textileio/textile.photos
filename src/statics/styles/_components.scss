@@ -384,6 +384,7 @@
 
   &__content {
     box-shadow: 0 15px 30px 0 rgba(46, 54, 78, 0.1);
+    background-color: rgba(255,255,255,1);
     border-radius: 4px;
     animation: fadeInDown ease .75s forwards;
     animation-delay: .5s;
@@ -712,6 +713,24 @@
         margin-bottom: 0;
         margin-right: 21px;
       }
+    }
+
+    &__appstore {
+      background: url('../images/appstore_badge.svg') no-repeat;
+      background-size: cover;
+      width: 265px;
+      height: 64px;
+      position: relative;
+      z-index: 1;
+    }
+
+    &__playstore {
+      background: url('../images/playstore_badge.svg') no-repeat;
+      background-size: cover;
+      width: 265px;
+      height: 64px;
+      position: relative;
+      z-index: 1;
     }
   }
 }

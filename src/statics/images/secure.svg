@@ -1,17 +1,1 @@
-<svg width="40px" height="36px" viewBox="0 0 40 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <g id="Responsive-&amp;-Guides" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="iPhone-8" transform="translate(-100.000000, -1217.000000)">
-            <g id="Group-3" transform="translate(53.000000, 671.000000)">
-                <g id="INTRO">
-                    <g id="SHARE" transform="translate(10.000000, 507.000000)">
-                        <g id="Group-7-Copy" transform="translate(37.840000, 39.600000)">
-                            <rect id="Rectangle-4" fill="#FFCF00" x="0" y="9.68" width="25.52" height="25.52"></rect>
-                            <circle id="Oval-2" fill="#FEB8D6" cx="22.88" cy="9.68" r="9.68"></circle>
-                            <polygon id="Path-3" fill="#FF1438" points="20.24 25.5274745 29.897095 12.32 38.96246 25.5274745"></polygon>
-                        </g>
-                    </g>
-                </g>
-            </g>
-        </g>
-    </g>
-</svg>
+<svg width="24" height="24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path fill="none" d="M0 0h24v24H0z"/><path d="M15.989 7.754h-1.947a.388.388 0 0 1-.39-.386v-.666c0-1-.734-1.893-1.737-1.99A1.927 1.927 0 0 0 9.79 6.615v.752a.388.388 0 0 1-.389.386H7.455a.387.387 0 0 1-.389-.386v-.616c0-2.403 1.795-4.506 4.207-4.73 2.768-.26 5.105 1.902 5.105 4.594v.752a.388.388 0 0 1-.389.386" fill="#374DFF"/><path d="M6.204 21.077A.204.204 0 0 1 6 20.873v-9.732a.203.203 0 0 1 .345-.148l10.389 9.733a.199.199 0 0 1 .05.223.201.201 0 0 1-.19.128H6.203z" fill="#FF5C62"/><path d="M17.882 19.526a.197.197 0 0 1-.138-.056L7.355 9.737a.199.199 0 0 1-.05-.223.201.201 0 0 1 .19-.128h10.39c.113 0 .204.091.204.203v9.733c0 .074-.034.12-.062.147a.217.217 0 0 1-.145.057M18.472 21.299z" fill="#FFD435"/></g></svg>
