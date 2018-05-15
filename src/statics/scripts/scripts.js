@@ -1,4 +1,13 @@
 (function () {
+  //* Wow init
+  new WOW({
+    boxClass:     'anim',
+    animateClass: 'animated',
+    offset:       0,
+    mobile:       true,
+    live:         true
+  }).init()
+
   //* Slider
   var sliderItemsNodes = document.querySelectorAll('.how__slider__content__list__item__desktop')
   var dotsItemsNodes = document.querySelectorAll('.how__slider__content__dots__item')
@@ -87,7 +96,6 @@
     xhr.open('GET', 'https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fmedium.com%2Ffeed%2Ftextileio', true);
     xhr.responseType = 'json';
     xhr.onload = function() {
-      console.log('RSS')
       var status = xhr.status;
       if (status === 200) {
         var title = xhr.response.items[0].title;
@@ -202,13 +210,4 @@
     after: function () {
     } // Callback to run after scroll
   })
-
-  //* Wow init
-  new WOW({
-    boxClass:     'anim',
-    animateClass: 'animated',
-    offset:       0,
-    mobile:       true,
-    live:         true
-  }).init()
 })()
