@@ -714,6 +714,24 @@
         margin-right: 21px;
       }
     }
+
+    &__appstore {
+      background: url('../images/appstore_badge.svg') no-repeat;
+      background-size: cover;
+      width: 265px;
+      height: 64px;
+      position: relative;
+      z-index: 1;
+    }
+
+    &__playstore {
+      background: url('../images/playstore_badge.svg') no-repeat;
+      background-size: cover;
+      width: 265px;
+      height: 64px;
+      position: relative;
+      z-index: 1;
+    }
   }
 }
 

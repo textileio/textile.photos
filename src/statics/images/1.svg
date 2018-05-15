@@ -1,16 +1,1 @@
-<svg width="41px" height="41px" viewBox="0 0 41 41" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<g id="Responsive-&amp;-Guides" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-    <g id="iPhone-8" transform="translate(-46.000000, -1993.000000)">
-        <g id="Three-simple-steps" transform="translate(30.000000, 1811.000000)">
-            <g id="1" transform="translate(18.000000, 176.000000)">
-                <g id="Group-19" transform="translate(0.000000, 8.000000)">
-                    <circle id="Oval-2-Copy-4" stroke="#FEB8D6" stroke-width="2.25" cx="18.75" cy="18.75" r="18.75"></circle>
-                    <text id="1" font-family="Rubik-Medium, Rubik" font-size="18" font-weight="400" line-spacing="15" letter-spacing="0.506250009" fill="#FEB8D6">
-                        <tspan x="14" y="28">1</tspan>
-                    </text>
-                </g>
-            </g>
-        </g>
-    </g>
-</g>
-</svg>
+<svg width="41" height="41" xmlns="http://www.w3.org/2000/svg"><g transform="translate(2 2)" fill="none" fill-rule="evenodd"><circle stroke="#FEB8D6" stroke-width="2.25" cx="18.75" cy="18.75" r="18.75"/><text font-family="Rubik-Medium, Rubik" font-size="18" font-weight="400" letter-spacing=".506" fill="#FEB8D6"><tspan x="14" y="25">1</tspan></text></g></svg>

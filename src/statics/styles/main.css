@@ -1072,6 +1072,20 @@ p, label {
       .cta .button:first-child {
         margin-bottom: 0;
         margin-right: 21px; } }
+  .cta .button__appstore {
+    background: url("../images/appstore_badge.svg") no-repeat;
+    background-size: cover;
+    width: 265px;
+    height: 64px;
+    position: relative;
+    z-index: 1; }
+  .cta .button__playstore {
+    background: url("../images/playstore_badge.svg") no-repeat;
+    background-size: cover;
+    width: 265px;
+    height: 64px;
+    position: relative;
+    z-index: 1; }
 
 .footer__content {
   padding: 56px 0;
@@ -1175,9 +1189,59 @@ p, label {
   .icon--slack {
     background: url("../images/slack.svg") no-repeat;
     background-size: cover;
-    width: 19px;
-    height: 19px;
+    width: 18px;
+    height: 18px;
     transition: background 0.3s ease;
+    position: relative;
+    z-index: 1; }
+  .icon--camera {
+    background: url("../images/camera.svg") no-repeat;
+    background-size: cover;
+    width: 48px;
+    height: 48px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1; }
+  .icon--sync {
+    background: url("../images/sync.svg") no-repeat;
+    background-size: cover;
+    width: 48px;
+    height: 48px;
+    position: relative;
+    z-index: 1; }
+  .icon--secure {
+    background: url("../images/secure.svg") no-repeat;
+    background-size: cover;
+    width: 48px;
+    height: 48px;
+    position: relative;
+    z-index: 1; }
+  .icon--share {
+    background: url("../images/share.svg") no-repeat;
+    background-size: cover;
+    width: 48px;
+    height: 48px;
+    position: relative;
+    z-index: 1; }
+  .icon--01 {
+    background: url("../images/1.svg") no-repeat;
+    background-size: cover;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    z-index: 1; }
+  .icon--02 {
+    background: url("../images/2.svg") no-repeat;
+    background-size: cover;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    z-index: 1; }
+  .icon--03 {
+    background: url("../images/3.svg") no-repeat;
+    background-size: cover;
+    width: 40px;
+    height: 40px;
     position: relative;
     z-index: 1; }
 
