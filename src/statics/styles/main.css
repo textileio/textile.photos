@@ -606,6 +606,7 @@ p, label {
   @media screen and (min-width: 1024px) {
     .hero {
       min-height: 600px;
+      max-height: 600px;
       padding: 120px 0 0; } }
   @media screen and (min-width: 1230px) {
     .hero {
