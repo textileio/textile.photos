@@ -1,8 +1,22 @@
+@font-face {
+  font-family: Rubik;
+  src: url(../fonts/Rubik-Regular.ttf);
+  font-weight: 400; }
+
+@font-face {
+  font-family: Rubik;
+  src: url(../fonts/Rubik-Medium.ttf);
+  font-weight: 500; }
+
+@font-face {
+  font-family: Rubik;
+  src: url(../fonts/Rubik-Bold.ttf);
+  font-weight: 700; }
+
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
-@import url("https://fonts.googleapis.com/css?family=Rubik:400,500,700");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -128,7 +142,7 @@ p, label {
 
 .hero-content {
   opacity: 0.6;
-  font-family: Montserrat-Regular, sans-serif;
+  font-family: 'Rubik', sans-serif;
   font-size: 1.125rem;
   color: #2E364E;
   letter-spacing: 0;
@@ -606,6 +620,7 @@ p, label {
   @media screen and (min-width: 1024px) {
     .hero {
       min-height: 600px;
+      max-height: 600px;
       padding: 120px 0 0; } }
   @media screen and (min-width: 1230px) {
     .hero {
@@ -1525,7 +1540,8 @@ body {
   background: url("../images/background.svg"), no-repeat;
   background-size: cover;
   background-position: 50%;
-  -webkit-font-smoothing: antialiased !important; }
+  -webkit-font-smoothing: antialiased !important;
+  font-family: 'Rubik', sans-serif; }
 
 .container {
   width: 100%;
