@@ -622,8 +622,7 @@ p, label {
     overflow: hidden; }
     .hero__title h1 {
       opacity: 0;
-      animation: fadeInDown ease .75s forwards;
-      animation-iteration-count: 1; }
+      animation: fadeInDown ease .75s forwards; }
     @media screen and (max-width: 768px) {
       .hero__title {
         margin-top: 0; } }

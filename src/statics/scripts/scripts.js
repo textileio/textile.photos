@@ -108,23 +108,21 @@
       }
     };
     xhr.send();
-  }
+  };
 
-  var loadedAnimationsList = animationsList.map(function (animation, i) {
-    var bb = bodymovin.loadAnimation({
+  var loadedAnimationsList = animationsList.map(function (animation) {
+    return bodymovin.loadAnimation({
       container: animation.node,
       renderer: 'svg',
       loop: animation.loop || false,
       autoplay: false,
       path: animation.path
     })
-    if (i === 0) {
-      // Wait until first animation is running to load our blog post title
-      bb.addEventListener('DOMLoaded', function() {
-        setTimeout(loadRSS, 1);
-      })
-    }
-    return bb
+  })
+
+  // async update the listed blog post title
+  loadedAnimationsList[0].addEventListener('DOMLoaded', function() {
+    setTimeout(loadRSS, 1);
   })
 
   loadedAnimationsList[0].setSpeed = 0.5
