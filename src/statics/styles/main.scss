@@ -1,3 +1,5 @@
+@import url('https://fonts.gstatic.com/css?family=Rubik:400,500,700');
+
 @import "reset";
 @import "typography";
 @import "utilities";
@@ -6,7 +8,6 @@
 @import "components";
 @import "icons";
 @import "animations";
-@import url('https://fonts.googleapis.com/css?family=Rubik:400,500,700');
 
 body {
   background: url('../images/background.svg'), no-repeat;

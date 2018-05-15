@@ -82,14 +82,49 @@
     }
   ]
 
-  var loadedAnimationsList = animationsList.map(function (animation) {
-    return bodymovin.loadAnimation({
+  var loadRSS = function(){
+    var xhr = new XMLHttpRequest();
+    xhr.open('GET', 'https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fmedium.com%2Ffeed%2Ftextileio', true);
+    xhr.responseType = 'json';
+    xhr.onload = function() {
+      console.log('RSS')
+      var status = xhr.status;
+      if (status === 200) {
+        var title = xhr.response.items[0].title;
+        if (title.length > 60) {
+          title = title.substring(0,57) + '...'
+        }
+        var span= document.createElement('span');
+        span.innerHTML= xhr.response.items[0].description;
+        var content = span.textContent || span.innerText;
+        if (content.length > 100) {
+          content = content.substring(0,97);
+          content = content.substring(0, content.lastIndexOf(" ")) + '...'
+        }
+        var link = xhr.response.items[0].link;
+        document.getElementsByClassName("blog__content__text__title")[0].innerHTML = title;
+        document.getElementsByClassName("blog__content__text__content")[0].innerHTML = content;
+        document.getElementsByClassName("blog__content__text__link")[0].href = link;
+      }
+    };
+    xhr.send();
+  }
+
+  var loadedAnimationsList = animationsList.map(function (animation, i) {
+    var bb = bodymovin.loadAnimation({
       container: animation.node,
       renderer: 'svg',
       loop: animation.loop || false,
       autoplay: false,
       path: animation.path
     })
+    if (i === 0) {
+      // Wait until first animation is running to load our blog post title
+      bb.addEventListener('DOMLoaded', function() {
+        setTimeout(loadRSS, 1);
+      })
+    }
+    return bb
   })
 
   loadedAnimationsList[0].setSpeed = 0.5
@@ -178,35 +213,4 @@
     mobile:       true,
     live:         true
   }).init()
-
-
-  /*
-  Grab latest blog post data from Medium. Async so page loads.
-   */
-  setTimeout(function(){
-    var xhr = new XMLHttpRequest();
-    xhr.open('GET', 'https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fmedium.com%2Ffeed%2Ftextileio', true);
-    xhr.responseType = 'json';
-    xhr.onload = function() {
-      var status = xhr.status;
-      if (status === 200) {
-        var title = xhr.response.items[0].title;
-        if (title.length > 60) {
-          title = title.substring(0,57) + '...'
-        }
-        var span= document.createElement('span');
-        span.innerHTML= xhr.response.items[0].description;
-        var content = span.textContent || span.innerText;
-        if (content.length > 100) {
-          content = content.substring(0,97);
-          content = content.substring(0, content.lastIndexOf(" ")) + '...'
-        }
-        var link = xhr.response.items[0].link;
-        document.getElementsByClassName("blog__content__text__title")[0].innerHTML = title;
-        document.getElementsByClassName("blog__content__text__content")[0].innerHTML = content;
-        document.getElementsByClassName("blog__content__text__link")[0].href = link;
-      }
-    };
-    xhr.send();
-  },0)
 })()
