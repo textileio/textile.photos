@@ -9,7 +9,6 @@
     live:         true
   }).init()
 
-
   //* Slider
   var sliderItemsNodes = document.querySelectorAll('.how__slider__content__list__item__desktop')
   var dotsItemsNodes = document.querySelectorAll('.how__slider__content__dots__item')
