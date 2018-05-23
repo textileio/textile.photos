@@ -319,6 +319,12 @@ p, label {
       height: 100%;
       transition: letter-spacing 0.5s ease; }
 
+@keyframes widthLength {
+  from {
+    width: 0; }
+  to {
+    width: 100%; } }
+
 .a--animated {
   background: url("../images/color.svg") no-repeat;
   -webkit-background-clip: text;
@@ -594,6 +600,22 @@ p, label {
 .growLeft {
   -webkit-animation-name: growLeft;
   animation-name: growLeft; }
+
+.loader {
+  background: #F9FBFF;
+  height: 100vh;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 500;
+  font-size: 42px;
+  color: #2E364E; }
+  .loader__bar {
+    background-color: #2524FF;
+    height: 4px;
+    animation-name: widthLength;
+    animation-duration: 1.3s; }
+  .loader__num {
+    margin-left: 40px;
+    margin-top: 32px; }
 
 .nav {
   padding-top: 24px; }
@@ -1259,6 +1281,12 @@ p, label {
     height: 40px;
     position: relative;
     z-index: 1; }
+
+@keyframes widthLength {
+  from {
+    width: 0; }
+  to {
+    width: 100%; } }
 
 .a--animated {
   background: url("../images/color.svg") no-repeat;

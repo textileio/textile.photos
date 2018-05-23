@@ -1,6 +1,26 @@
 @import "colors";
 @import "animations";
 
+.loader {
+  background: $light-blue;
+  height: 100vh;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 500;
+  font-size: 42px;
+  color: #2E364E;
+
+  &__bar {
+    background-color: $blue;
+    height: 4px;
+    animation-name: widthLength;
+    animation-duration: 1.3s;
+  }
+
+  &__num {
+    margin-left: 40px;
+    margin-top: 32px;
+  }
+}
 
 .nav {
   padding-top: 24px;
