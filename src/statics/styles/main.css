@@ -1590,3 +1590,6 @@ input:focus, button:focus {
 a {
   color: #2524FF;
   text-decoration: none; }
+
+.locked {
+  overflow: hidden; }

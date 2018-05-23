@@ -57,7 +57,6 @@
     <script type="text/javascript">
       document.addEventListener("DOMContentLoaded", function() {
         var n = document.querySelector('.loader__num')
-
         var num = 0
         setInterval(function () {
           if (num < 100) {
@@ -76,6 +75,7 @@
           s.onload = function () {
             setTimeout(function () {
               l.classList.toggle('hide')
+              x.classList.toggle('locked')
             }, 1000)
           }
           x.appendChild(s)
@@ -100,7 +100,7 @@
       })
     </script>
 </head>
-<body>
+<body class="locked">
     <div class="loader">
         <div class="loader__bar"></div>
         <div class="loader__num">0</div>
