@@ -69,9 +69,9 @@
           var s = document.createElement('script')
           var x = document.querySelector('body')
           var l = document.querySelector('.loader')
-          var heading = document.querySelector('.hero__heading')
-          var subheading = document.querySelector('.hero__subheading')
-          var image = document.querySelector('.hero__animation')
+          var h = document.querySelector('.hero__heading')
+          var s = document.querySelector('.hero__subheading')
+          var i = document.querySelector('.hero__animation')
 
 
           s.type = 'text/javascript'
@@ -80,9 +80,9 @@
             setTimeout(function () {
               l.classList.toggle('hide')
               x.classList.toggle('locked')
-              heading.classList.toggle('show-text')
-              subheading.classList.toggle('show-text')
-              image.classList.toggle('show-image')
+              h.classList.toggle('show-text')
+              s.classList.toggle('show-text')
+              i.classList.toggle('show-image')
             }, 1000)
           }
           x.appendChild(s)
