@@ -84,8 +84,11 @@
     overflow: hidden;
 
     h1 {
+      animation: ease .75s forwards;
+      animation-delay: .25s;
+      visibility: hidden;
       opacity: 0;
-      animation: fadeInDown ease .75s forwards;
+      animation-name: none;
 
     }
 
@@ -105,9 +108,11 @@
       font-size: 1.35rem;
       line-height: 1.57em;
       color: rgba(46, 54, 78, .8);
+      animation: ease .75s forwards;
+      animation-delay: .50s;
       opacity: 0;
-      animation: fadeInDown ease .75s forwards;
-      animation-delay: .25s;
+      visibility: hidden;
+      animation-name: none;
     }
   }
 
@@ -150,11 +155,15 @@
   &__animation {
     position: absolute;
     max-width: 1440px;
-    top: 0;
+    top: 48px;
     left: 0;
     right: 0;
-    bottom: 20%;
+    bottom: 10%;
     margin: 0 auto;
+    animation: ease .75s forwards;
+    opacity: 0;
+    visibility: hidden;
+    animation-name: none;
 
     @media screen and (min-width: 769px) and (max-width: 1024px) {
       width: 1240px;
@@ -879,4 +888,14 @@
   background-color: #CBD8E5;
   opacity: .6;
   margin: 0 auto;
+}
+
+.show-text {
+  visibility: visible!important;
+  animation-name: fadeInDown!important;
+}
+
+.show-image {
+  visibility: visible!important;
+  animation-name: fadeIn!important;
 }

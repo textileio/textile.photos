@@ -69,6 +69,10 @@
           var s = document.createElement('script')
           var x = document.querySelector('body')
           var l = document.querySelector('.loader')
+          var heading = document.querySelector('.hero__heading')
+          var subheading = document.querySelector('.hero__subheading')
+          var image = document.querySelector('.hero__animation')
+
 
           s.type = 'text/javascript'
           s.src = url
@@ -76,6 +80,9 @@
             setTimeout(function () {
               l.classList.toggle('hide')
               x.classList.toggle('locked')
+              heading.classList.toggle('show-text')
+              subheading.classList.toggle('show-text')
+              image.classList.toggle('show-image')
             }, 1000)
           }
           x.appendChild(s)
@@ -135,10 +142,10 @@
             <div class="hero__content flex-d flex-vert-m">
                 <div class="hero__content__text">
                     <div class="hero__title center hero-title">
-                        <h1 class="no-anim">Own your memories</h1>
+                        <h1 class="hero__heading">Own your memories</h1>
                     </div>
                     <div class="hero__text center hero-content">
-                        <h4 class="no-anim">Textile is a digital wallet for your photos</h4>
+                        <h4 class="hero__subheading">Textile is a digital wallet for your photos</h4>
                     </div>
                 </div>
                 <div class="hero__content__image center">

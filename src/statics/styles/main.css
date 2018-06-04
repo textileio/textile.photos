@@ -658,8 +658,11 @@ p, label {
     margin-bottom: 16px;
     overflow: hidden; }
     .hero__title h1 {
+      animation: ease .75s forwards;
+      animation-delay: .25s;
+      visibility: hidden;
       opacity: 0;
-      animation: fadeInDown ease .75s forwards; }
+      animation-name: none; }
     @media screen and (max-width: 768px) {
       .hero__title {
         margin-top: 0; } }
@@ -672,9 +675,11 @@ p, label {
       font-size: 1.35rem;
       line-height: 1.57em;
       color: rgba(46, 54, 78, 0.8);
+      animation: ease .75s forwards;
+      animation-delay: .50s;
       opacity: 0;
-      animation: fadeInDown ease .75s forwards;
-      animation-delay: .25s; }
+      visibility: hidden;
+      animation-name: none; }
   @media screen and (max-width: 1024px) {
     .hero__content {
       display: block; } }
@@ -700,11 +705,15 @@ p, label {
   .hero__animation {
     position: absolute;
     max-width: 1440px;
-    top: 0;
+    top: 48px;
     left: 0;
     right: 0;
-    bottom: 20%;
-    margin: 0 auto; }
+    bottom: 10%;
+    margin: 0 auto;
+    animation: ease .75s forwards;
+    opacity: 0;
+    visibility: hidden;
+    animation-name: none; }
     @media screen and (min-width: 769px) and (max-width: 1024px) {
       .hero__animation {
         width: 1240px;
@@ -1212,6 +1221,14 @@ p, label {
   background-color: #CBD8E5;
   opacity: .6;
   margin: 0 auto; }
+
+.show-text {
+  visibility: visible !important;
+  animation-name: fadeInDown !important; }
+
+.show-image {
+  visibility: visible !important;
+  animation-name: fadeIn !important; }
 
 .icon {
   display: block; }
