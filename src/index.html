@@ -28,7 +28,7 @@
     <meta name="msapplication-TileColor" content="#ffd435">
     <meta name="theme-color" content="#ffffff">
 
-    <link rel="preload" href="statics/bodymovin/hero/data.json" as="fetch">
+    <!--<link rel="preload" href="statics/bodymovin/hero/data.json" as="fetch">-->
     <link rel="preload" href="statics/fonts/Rubik-Bold.ttf" as="font">
     <link rel="apple-touch-icon" sizes="180x180" href="statics/images/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="statics/images/favicon/favicon-32x32.png">
@@ -52,8 +52,66 @@
       })();
     </script>
     <!-- End Matomo Code -->
+
+    <!-- Lazy loading -->
+    <script type="text/javascript">
+      document.addEventListener("DOMContentLoaded", function() {
+        var n = document.querySelector('.loader__num')
+        var num = 0
+        setInterval(function () {
+          if (num < 100) {
+              num = num + 5
+              n.innerText = num
+          }
+        }, 15)
+
+        function script(url) {
+          var s = document.createElement('script')
+          var x = document.querySelector('body')
+          var l = document.querySelector('.loader')
+          var he = document.querySelector('.hero__heading')
+          var su = document.querySelector('.hero__subheading')
+          var im = document.querySelector('.hero__animation')
+
+
+          s.type = 'text/javascript'
+          s.src = url
+          s.onload = function () {
+            setTimeout(function () {
+              l.classList.toggle('hide')
+              x.classList.toggle('locked')
+              he.classList.toggle('show-text')
+              su.classList.toggle('show-text')
+              im.classList.toggle('show-image')
+            }, 1000)
+          }
+          x.appendChild(s)
+        }
+
+        var urls = [
+          'statics/libs/smooth-scroll.js',
+          'statics/libs/wow.min.js',
+          'statics/scripts/scripts.js',
+        ]
+
+        function asyncLoad () {
+          urls.forEach(function (u) {
+            return script(u)
+          })
+        }
+
+        if (window.attachEvent)
+          window.attachEvent('onload', asyncLoad)
+        else
+          window.addEventListener('load', asyncLoad, false)
+      })
+    </script>
 </head>
-<body>
+<body class="locked">
+    <div class="loader">
+        <div class="loader__bar"></div>
+        <div class="loader__num">0</div>
+    </div>
     <nav class="nav">
         <div class="container">
             <div class="nav__content flex-d flex-m">
@@ -84,10 +142,10 @@
             <div class="hero__content flex-d flex-vert-m">
                 <div class="hero__content__text">
                     <div class="hero__title center hero-title">
-                        <h1 class="no-anim">Own your memories</h1>
+                        <h1 class="hero__heading">Own your memories</h1>
                     </div>
                     <div class="hero__text center hero-content">
-                        <h4 class="no-anim">Textile is a digital wallet for your photos</h4>
+                        <h4 class="hero__subheading">Textile is a digital wallet for your photos</h4>
                     </div>
                 </div>
                 <div class="hero__content__image center">
@@ -371,9 +429,6 @@
             </div>
         </div>
     </footer>
-    <script src="statics/libs/smooth-scroll.js"></script>
-    <script src="statics/libs/wow.min.js"></script>
-    <script src="statics/libs/bodymovin.min.js"></script>
-    <script src="statics/scripts/scripts.js"></script>
+    <script src='statics/libs/bodymovin.min.js'></script>
 </body>
 </html>

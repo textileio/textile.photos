@@ -1,5 +1,4 @@
 (function () {
-
   //* Wow init
   new WOW({
     boxClass:     'anim',

@@ -319,6 +319,12 @@ p, label {
       height: 100%;
       transition: letter-spacing 0.5s ease; }
 
+@keyframes widthLength {
+  from {
+    width: 0; }
+  to {
+    width: 100%; } }
+
 .a--animated {
   background: url("../images/color.svg") no-repeat;
   -webkit-background-clip: text;
@@ -595,6 +601,22 @@ p, label {
   -webkit-animation-name: growLeft;
   animation-name: growLeft; }
 
+.loader {
+  background: #F9FBFF;
+  height: 100vh;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 500;
+  font-size: 42px;
+  color: #2E364E; }
+  .loader__bar {
+    background-color: #2524FF;
+    height: 4px;
+    animation-name: widthLength;
+    animation-duration: 1.3s; }
+  .loader__num {
+    margin-left: 40px;
+    margin-top: 32px; }
+
 .nav {
   padding-top: 24px; }
   .nav__list__item {
@@ -636,8 +658,11 @@ p, label {
     margin-bottom: 16px;
     overflow: hidden; }
     .hero__title h1 {
+      animation: ease .75s forwards;
+      animation-delay: .25s;
+      visibility: hidden;
       opacity: 0;
-      animation: fadeInDown ease .75s forwards; }
+      animation-name: none; }
     @media screen and (max-width: 768px) {
       .hero__title {
         margin-top: 0; } }
@@ -650,9 +675,11 @@ p, label {
       font-size: 1.35rem;
       line-height: 1.57em;
       color: rgba(46, 54, 78, 0.8);
+      animation: ease .75s forwards;
+      animation-delay: .50s;
       opacity: 0;
-      animation: fadeInDown ease .75s forwards;
-      animation-delay: .25s; }
+      visibility: hidden;
+      animation-name: none; }
   @media screen and (max-width: 1024px) {
     .hero__content {
       display: block; } }
@@ -678,11 +705,15 @@ p, label {
   .hero__animation {
     position: absolute;
     max-width: 1440px;
-    top: 0;
+    top: 48px;
     left: 0;
     right: 0;
-    bottom: 20%;
-    margin: 0 auto; }
+    bottom: 10%;
+    margin: 0 auto;
+    animation: ease .75s forwards;
+    opacity: 0;
+    visibility: hidden;
+    animation-name: none; }
     @media screen and (min-width: 769px) and (max-width: 1024px) {
       .hero__animation {
         width: 1240px;
@@ -1191,6 +1222,14 @@ p, label {
   opacity: .6;
   margin: 0 auto; }
 
+.show-text {
+  visibility: visible !important;
+  animation-name: fadeInDown !important; }
+
+.show-image {
+  visibility: visible !important;
+  animation-name: fadeIn !important; }
+
 .icon {
   display: block; }
   .icon--github {
@@ -1259,6 +1298,12 @@ p, label {
     height: 40px;
     position: relative;
     z-index: 1; }
+
+@keyframes widthLength {
+  from {
+    width: 0; }
+  to {
+    width: 100%; } }
 
 .a--animated {
   background: url("../images/color.svg") no-repeat;
@@ -1562,3 +1607,6 @@ input:focus, button:focus {
 a {
   color: #2524FF;
   text-decoration: none; }
+
+.locked {
+  overflow: hidden; }
