@@ -25,6 +25,10 @@
 @import "icons";
 @import "animations";
 
+html, body {
+  height:100%;
+}
+
 body {
   background: url('../images/background.svg'), no-repeat;
   background-size: cover;

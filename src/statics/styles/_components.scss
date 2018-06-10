@@ -12,8 +12,6 @@
   &__bar {
     background-color: $blue;
     height: 4px;
-    animation-name: widthLength;
-    animation-duration: 1.3s;
   }
 
   &__num {
@@ -431,7 +429,7 @@
     &__image {
       img {
         display: block;
-        height: -webkit-fill-available;
+        width: 290px;
       }
     }
 

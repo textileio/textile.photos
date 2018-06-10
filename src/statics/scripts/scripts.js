@@ -96,41 +96,6 @@
   }
 
   //* Bodymovin init
-  var heroAnimNode = document.querySelector('.hero__animation')
-  var step1AnimNode = document.querySelector('.steps__content__image__list__item--1')
-  var step2AnimNode = document.querySelector('.steps__content__image__list__item--2')
-  var step3AnimNode = document.querySelector('.steps__content__image__list__item--3')
-
-  var animationsList = [
-    {
-      node: heroAnimNode,
-      path: 'statics/bodymovin/hero/data.json',
-      loop: true
-    },
-    {
-      node: step1AnimNode,
-      path: 'statics/bodymovin/step1/data.json'
-    },
-    {
-      node: step2AnimNode,
-      path: 'statics/bodymovin/step2/data.json'
-    },
-    {
-      node: step3AnimNode,
-      path: 'statics/bodymovin/step3/data.json'
-    }
-  ]
-
-  var loadedAnimationsList = animationsList.map(function (animation) {
-    return bodymovin.loadAnimation({
-      container: animation.node,
-      renderer: 'svg',
-      loop: animation.loop || false,
-      autoplay: false,
-      path: animation.path
-    })
-  })
-
   loadedAnimationsList[0].addEventListener('DOMLoaded', function() {
     setTimeout(loadRSS, 1);
   })
