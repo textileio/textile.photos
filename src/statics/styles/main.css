@@ -1579,9 +1579,6 @@ p, label {
   -webkit-animation-name: growLeft;
   animation-name: growLeft; }
 
-html, body {
-  height: 100%; }
-
 body {
   background: url("../images/background.svg"), no-repeat;
   background-size: cover;
