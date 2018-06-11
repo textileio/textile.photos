@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Textile Photos — Own your memories</title>
-    <meta name="description" content="Textile is a digital wallet for your photos." />
+    <meta name="description" content="Textile is a digital wallet for your photos."/>
 
     <meta itemprop="name" content="Textile Photos — Own your memories">
     <meta itemprop="description" content="Textile is a digital wallet for your photos.">
@@ -19,16 +19,15 @@
     <meta name="twitter:image:src" content="statics/images/screenshots/tw_cover.png">
 
     <!-- Open Graph data -->
-    <meta property="og:title" content="Textile Photos — Own your memories" />
-    <meta property="og:type" content="article" />
-    <meta property="og:url" content="http://www.textile.photos" />
-    <meta property="og:image" content="statics/images/screenshots/fb_cover.png" />
-    <meta property="og:description" content="Textile is a digital wallet for your photos." />
-    <meta property="og:site_name" content="Textile Photos — Own your memories" />
+    <meta property="og:title" content="Textile Photos — Own your memories"/>
+    <meta property="og:type" content="article"/>
+    <meta property="og:url" content="http://www.textile.photos"/>
+    <meta property="og:image" content="statics/images/screenshots/fb_cover.png"/>
+    <meta property="og:description" content="Textile is a digital wallet for your photos."/>
+    <meta property="og:site_name" content="Textile Photos — Own your memories"/>
     <meta name="msapplication-TileColor" content="#ffd435">
     <meta name="theme-color" content="#ffffff">
 
-    <link rel="preload" href="statics/bodymovin/hero/data.json" as="fetch">
     <link rel="preload" href="statics/fonts/Rubik-Bold.ttf" as="font">
     <link rel="apple-touch-icon" sizes="180x180" href="statics/images/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="statics/images/favicon/favicon-32x32.png">
@@ -43,337 +42,372 @@
       /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
       _paq.push(['trackPageView']);
       _paq.push(['enableLinkTracking']);
-      (function() {
-        var u="//analytics.textile.photos/";
-        _paq.push(['setTrackerUrl', u+'piwik.php']);
+      (function () {
+        var u = "//analytics.textile.photos/";
+        _paq.push(['setTrackerUrl', u + 'piwik.php']);
         _paq.push(['setSiteId', '3']);
-        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-        g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+        var d = document, g = d.createElement('script'), s = d.getElementsByTagName('script')[0];
+        g.type = 'text/javascript';
+        g.async = true;
+        g.defer = true;
+        g.src = u + 'piwik.js';
+        s.parentNode.insertBefore(g, s);
       })();
     </script>
     <!-- End Matomo Code -->
 </head>
-<body>
-    <nav class="nav">
-        <div class="container">
-            <div class="nav__content flex-d flex-m">
-                <h1 class="logo"></h1>
-                <ul class="nav__list flex-d">
-                    <li class="nav__list__item tablet">
-                        <a class="a--animated" href="https://twitter.com/Textile01" target="_blank">Twitter</a>
-                    </li>
-                    <li class="nav__list__item tablet">
-                        <a class="a--animated" href="https://github.com/textileio/" target="_blank">Github</a>
-                    </li>
-                    <li class="nav__list__item tablet">
-                        <a class="a--animated" href="https://medium.com/textileio" target="_blank">Blog</a>
-                    </li>
-                    <li class="nav__list__item">
-                        <a href="#cta">
-                            <button class="button button--primary-animate">
-                                <span class="button--primary-animate__content">Get it now</span>
-                            </button>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <section class="hero">
-        <div class="container">
-            <div class="hero__content flex-d flex-vert-m">
-                <div class="hero__content__text">
-                    <div class="hero__title center hero-title">
-                        <h1 class="no-anim">Own your memories</h1>
-                    </div>
-                    <div class="hero__text center hero-content">
-                        <h4 class="no-anim">Textile is a digital wallet for your photos</h4>
-                    </div>
-                </div>
-                <div class="hero__content__image center">
-                    <img src="statics/images/hero.svg" alt="">
-                </div>
-            </div>
-        </div>
-        <div class="hero__animation desktop"></div>
-    </section>
-    <section class="secure">
-        <div class="container center">
-            <div class="secure__icon">
-                <i class="icon icon--camera"></i>
-            </div>
-            <div class="secure__title">
-                <h2 class="anim">We believe in a future where we each control our own data. Let's start with photos.</h2>
-            </div>
-            <ul class="anim secure__list flex-d">
-                <li class="secure__list__item">
-                    <div class="secure__list__item__icon">
-                        <i class="icon icon--sync"></i>
-                    </div>
-                    <h4 class="secure__list__item__title">Sync</h4>
-                    <p class="secure__list__item__content">Organize your photos across your devices or back them up remotely</p>
+<body class="locked">
+<div class="loader">
+    <div class="loader__bar" style="width: 0%"></div>
+    <div class="loader__num">0</div>
+</div>
+<nav class="nav">
+    <div class="container">
+        <div class="nav__content flex-d flex-m">
+            <h1 class="logo"></h1>
+            <ul class="nav__list flex-d">
+                <li class="nav__list__item tablet">
+                    <a class="a--animated" href="https://twitter.com/Textile01" target="_blank">Twitter</a>
                 </li>
-                <li class="secure__list__item">
-                    <div class="secure__list__item__icon">
-                        <i class="icon icon--share"></i>
-                    </div>
-                    <h4 class="secure__list__item__title">Share</h4>
-                    <p class="secure__list__item__content">Publish your photos to friends, family, or your favorite communities</p>
+                <li class="nav__list__item tablet">
+                    <a class="a--animated" href="https://github.com/textileio/" target="_blank">Github</a>
                 </li>
-                <li class="secure__list__item">
-                    <div class="secure__list__item__icon">
-                        <i class="icon icon--secure"></i>
-                    </div>
-                    <h4 class="secure__list__item__title">Secure</h4>
-                    <p class="secure__list__item__content">Your data is stored in a decentralized system designed to last forever</p>
+                <li class="nav__list__item tablet">
+                    <a class="a--animated" href="https://medium.com/textileio" target="_blank">Blog</a>
+                </li>
+                <li class="nav__list__item">
+                    <a href="#cta">
+                        <button class="button button--primary-animate">
+                            <span class="button--primary-animate__content">Get it now</span>
+                        </button>
+                    </a>
                 </li>
             </ul>
         </div>
-    </section>
-    <section class="steps anim fadeInUp">
-        <div class="container center">
-            <div class="steps__title">
-                <h2 class="anim">Three simple steps</h2>
+    </div>
+</nav>
+<section class="hero">
+    <div class="container">
+        <div class="hero__content flex-d flex-vert-m">
+            <div class="hero__content__text">
+                <div class="hero__title center hero-title">
+                    <h1 class="hero__heading">Own your memories</h1>
+                </div>
+                <div class="hero__text center hero-content">
+                    <h4 class="hero__subheading">Textile is a digital wallet for your photos</h4>
+                </div>
             </div>
-            <p class="anim steps__subtitle">Just a few minutes to start. Afterwards just sit back and have fun.</p>
-            <div class="anim steps__content flex-d">
-                <ul class="steps__content__list">
-                    <li data-step="0" class="steps__content__list__item flex-d flex-m">
-                        <div class="steps__content__list__item__num">
-                            <i class="icon icon--01"></i>
-                        </div>
-                        <div class="steps__content__list__item__text">
-                            <h5 class="steps__content__list__item__title">Download the app
-                            </h5>
-                            <p class="steps__content__list__item__subtitle">Find us in App Store and Google Play Store.</p>
-                        </div>
-                    </li>
-                    <li data-step="1" class="steps__content__list__item flex-d flex-m">
-                        <div class="steps__content__list__item__num">
-                            <i class="icon icon--02"></i>
-                        </div>
-                        <div class="steps__content__list__item__text">
-                            <h5 class="steps__content__list__item__title">Take a picture</h5>
-                            <p class="steps__content__list__item__subtitle">Your photos will automatically sync across all your devices.</p>
-                        </div>
-                    </li>
-                    <li data-step="2" class="steps__content__list__item flex-d flex-m">
-                        <div class="steps__content__list__item__num">
-                            <i class="icon icon--03"></i>
-                        </div>
-                        <div class="steps__content__list__item__text">
-                            <h5 class="steps__content__list__item__title">Share!</h5>
-                            <p class="steps__content__list__item__subtitle">Create private group threads where you can be yourself.</p>
-                        </div>
-                    </li>
-                    <li class="steps__content__list__item--active"></li>
+            <div class="hero__content__image center">
+                <img src="statics/images/hero.svg" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="hero__animation desktop"></div>
+</section>
+<section class="secure">
+    <div class="container center">
+        <div class="secure__icon">
+            <i class="icon icon--camera"></i>
+        </div>
+        <div class="secure__title">
+            <h2 class="anim">We believe in a future where we each control our own data. Let's start with photos.</h2>
+        </div>
+        <ul class="anim secure__list flex-d">
+            <li class="secure__list__item">
+                <div class="secure__list__item__icon">
+                    <i class="icon icon--sync"></i>
+                </div>
+                <h4 class="secure__list__item__title">Sync</h4>
+                <p class="secure__list__item__content">Organize your photos across your devices or back them up
+                    remotely</p>
+            </li>
+            <li class="secure__list__item">
+                <div class="secure__list__item__icon">
+                    <i class="icon icon--share"></i>
+                </div>
+                <h4 class="secure__list__item__title">Share</h4>
+                <p class="secure__list__item__content">Publish your photos to friends, family, or your favorite
+                    communities</p>
+            </li>
+            <li class="secure__list__item">
+                <div class="secure__list__item__icon">
+                    <i class="icon icon--secure"></i>
+                </div>
+                <h4 class="secure__list__item__title">Secure</h4>
+                <p class="secure__list__item__content">Your data is stored in a decentralized system designed to last
+                    forever</p>
+            </li>
+        </ul>
+    </div>
+</section>
+<section class="steps anim fadeInUp">
+    <div class="container center">
+        <div class="steps__title">
+            <h2 class="anim">Three simple steps</h2>
+        </div>
+        <p class="anim steps__subtitle">Just a few minutes to start. Afterwards just sit back and have fun.</p>
+        <div class="anim steps__content flex-d">
+            <ul class="steps__content__list">
+                <li data-step="0" class="steps__content__list__item flex-d flex-m">
+                    <div class="steps__content__list__item__num">
+                        <i class="icon icon--01"></i>
+                    </div>
+                    <div class="steps__content__list__item__text">
+                        <h5 class="steps__content__list__item__title">Download the app
+                        </h5>
+                        <p class="steps__content__list__item__subtitle">Find us in App Store and Google Play Store.</p>
+                    </div>
+                </li>
+                <li data-step="1" class="steps__content__list__item flex-d flex-m">
+                    <div class="steps__content__list__item__num">
+                        <i class="icon icon--02"></i>
+                    </div>
+                    <div class="steps__content__list__item__text">
+                        <h5 class="steps__content__list__item__title">Take a picture</h5>
+                        <p class="steps__content__list__item__subtitle">Your photos will automatically sync across all
+                            your devices.</p>
+                    </div>
+                </li>
+                <li data-step="2" class="steps__content__list__item flex-d flex-m">
+                    <div class="steps__content__list__item__num">
+                        <i class="icon icon--03"></i>
+                    </div>
+                    <div class="steps__content__list__item__text">
+                        <h5 class="steps__content__list__item__title">Share!</h5>
+                        <p class="steps__content__list__item__subtitle">Create private group threads where you can be
+                            yourself.</p>
+                    </div>
+                </li>
+                <li class="steps__content__list__item--active"></li>
+            </ul>
+            <div class="steps__content__image tablet">
+                <ul class="steps__content__image__list">
+                    <li data-image="0"
+                        class="steps__content__image__list__item steps__content__image__list__item--1"></li>
+                    <li data-image="1"
+                        class="steps__content__image__list__item steps__content__image__list__item--2 hide"></li>
+                    <li data-image="2"
+                        class="steps__content__image__list__item steps__content__image__list__item--3 hide"></li>
                 </ul>
-                <div class="steps__content__image tablet">
-                    <ul class="steps__content__image__list">
-                        <li data-image="0" class="steps__content__image__list__item steps__content__image__list__item--1"></li>
-                        <li data-image="1" class="steps__content__image__list__item steps__content__image__list__item--2 hide"></li>
-                        <li data-image="2" class="steps__content__image__list__item steps__content__image__list__item--3 hide"></li>
-                    </ul>
-                </div>
-            </div>
-            <a href="#cta">
-                <button class="anim button button--outline">
-                    <span class="button--outline__content">Let's start</span>
-                </button>
-            </a>
-        </div>
-    </section>
-    <section class="blog anim fadeInUp">
-        <div class="container center">
-            <div class="blog__title">
-                <h2 class="anim">Want to learn more?</h2>
-            </div>
-            <p class="anim blog__subtitle">
-                We are constantly writing about our work to create a more descentralized world. Check out our latest story.
-            </p>
-            <div class="anim blog__content flex-d">
-                <div class="blog__content__image tablet">
-                    <img class="blog__content__image__src" src="statics/images/blog.svg" alt="">
-                </div>
-                <div class="blog__content__text">
-                    <h3 class="blog__content__text__title">Sneak peak: data goes bang episode 1, about personal</h3>
-                    <p class="blog__content__text__content">Today, I want to share last week’s inaugural edition of data goes bang. We started data goes bang to lead a…</p>
-                    <a class="blog__content__text__link card-link a--animated" href="https://medium.com/textileio" target="_blank">Read More</a>
-                </div>
             </div>
         </div>
-    </section>
-    <div class="break"></div>
-    <section class="tech anim">
-        <div class="container center">
-            <div class="tech__title">
-                <h2 class="anim">Technology matters</h2>
+        <a href="#cta">
+            <button class="anim button button--outline">
+                <span class="button--outline__content">Let's start</span>
+            </button>
+        </a>
+    </div>
+</section>
+<section class="blog anim fadeInUp">
+    <div class="container center">
+        <div class="blog__title">
+            <h2 class="anim">Want to learn more?</h2>
+        </div>
+        <p class="anim blog__subtitle">
+            We are constantly writing about our work to create a more descentralized world. Check out our latest story.
+        </p>
+        <div class="anim blog__content flex-d">
+            <div class="blog__content__image tablet">
+                <img class="blog__content__image__src" src="statics/images/blog.svg" alt="">
             </div>
-            <p class="anim tech__text">
-                Textile is built on open source code, the IPFS protocol, and a mission to improve the future of our data. Are you ready to join us?
+            <div class="blog__content__text">
+                <h3 class="blog__content__text__title">Sneak peak: data goes bang episode 1, about personal</h3>
+                <p class="blog__content__text__content">Today, I want to share last week’s inaugural edition of data
+                    goes bang. We started data goes bang to lead a…</p>
+                <a class="blog__content__text__link card-link a--animated" href="https://medium.com/textileio"
+                   target="_blank">Read More</a>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="break"></div>
+<section class="tech anim">
+    <div class="container center">
+        <div class="tech__title">
+            <h2 class="anim">Technology matters</h2>
+        </div>
+        <p class="anim tech__text">
+            Textile is built on open source code, the IPFS protocol, and a mission to improve the future of our data.
+            Are you ready to join us?
 
-            </p>
-            <div class="anim tech__buttons flex-d">
-                <a href="https://github.com/textileio/textile-mobile/stargazers" target="_blank">
-                    <button class="button button--outline">
+        </p>
+        <div class="anim tech__buttons flex-d">
+            <a href="https://github.com/textileio/textile-mobile/stargazers" target="_blank">
+                <button class="button button--outline">
                         <span class="button__icon">
                             <i class="icon icon--github"></i>
                         </span>
-                        <span class="button__text button--outline__content">Find us on GitHub</span>
-                    </button>
-                </a>
-                <a href="https://slack.textile.io/" target="_blank">
-                    <button class="button button--outline">
+                    <span class="button__text button--outline__content">Find us on GitHub</span>
+                </button>
+            </a>
+            <a href="https://slack.textile.io/" target="_blank">
+                <button class="button button--outline">
                         <span class="button__icon">
                             <i class="icon icon--slack"></i>
                         </span>
-                        <span class="button__text button--outline__content">Join us on Slack</span>
-                    </button>
-                </a>
-            </div>
+                    <span class="button__text button--outline__content">Join us on Slack</span>
+                </button>
+            </a>
         </div>
-    </section>
-    <div class="break"></div>
-    <section class="how anim">
-        <div class="center">
-            <div class="how__title">
-                <h2 class="anim">How it works</h2>
-            </div>
-            <div class="anim how__slider tablet">
-                <div class="how__slider__left"></div>
-                <div class="how__slider__center">
-                    <div class="how__slider__content">
-                        <ul class="how__slider__content__list">
-                            <li class="how__slider__content__list__item__desktop">
-                                <h2 class="how__slider__content__list__item__title">Create an account</h2>
-                                <p class="how__slider__content__list__item__content">Every user gets a unique and secure private key that is yours and never shared.</p>
-                            </li>
-                            <li class="how__slider__content__list__item__desktop hide">
-                                <h2 class="how__slider__content__list__item__title">Save pictures</h2>
-                                <p class="how__slider__content__list__item__content">Every photo a user takes is encrypted with their private key and given a unique fingerprint.</p>
-                            </li>
-                            <li class="how__slider__content__list__item__desktop hide">
-                                <h2 class="how__slider__content__list__item__title">Track your memories</h2>
-                                <p class="how__slider__content__list__item__content">That fingerprint is stored in the user's digital wallet, where they keep track of all the photos they've taken.</p>
-                            </li>
-                            <li class="how__slider__content__list__item__desktop hide">
-                                <h2 class="how__slider__content__list__item__title">Sync every photo</h2>
-                                <p class="how__slider__content__list__item__content">If the user chooses, encrypted versions of the photo are synced across a user's devices or backed up remotely on IPFS.</p>
-                            </li>
-                            <li class="how__slider__content__list__item__desktop hide">
-                                <h2 class="how__slider__content__list__item__title">Share safely</h2>
-                                <p class="how__slider__content__list__item__content">If the user shares the photo in a group thread, the photo is re-encrypted with a shared key and broadcast to thread members.</p>
-                            </li>
-                        </ul>
-                        <ul class="how__slider__content__dots tablet flex-d">
-                            <li class="how__slider__content__dots__item how__slider__content__dots__item--active"></li>
-                            <li class="how__slider__content__dots__item"></li>
-                            <li class="how__slider__content__dots__item"></li>
-                            <li class="how__slider__content__dots__item"></li>
-                            <li class="how__slider__content__dots__item"></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="how__slider__right"></div>
-            </div>
-            <div class="anim how__slider mobile">
-                <div class="how__slider__center">
-                    <div class="how__slider__content">
-                        <ul class="how__slider__content__list">
-                            <li class="how__slider__content__list__item">
-                                <h2 class="how__slider__content__list__item__title">Create an account</h2>
-                                <p class="how__slider__content__list__item__content">Every user gets a unique and secure private key that is theirs and never shared.</p>
-                            </li>
-                            <li class="how__slider__content__list__item">
-                                <h2 class="how__slider__content__list__item__title">Save pictures</h2>
-                                <p class="how__slider__content__list__item__content">Every photo a user takes is encrypted with their private key and given a unique fingerprint.</p>
-                            </li>
-                            <li class="how__slider__content__list__item">
-                                <h2 class="how__slider__content__list__item__title">Track your memories</h2>
-                                <p class="how__slider__content__list__item__content">That fingerprint is stored in the user's digital wallet, where they keep track of all the photos they've taken.</p>
-                            </li>
-                            <li class="how__slider__content__list__item">
-                                <h2 class="how__slider__content__list__item__title">Sync every photo</h2>
-                                <p class="how__slider__content__list__item__content">If the user chooses, encrypted versions of the photo are synced across a user's devices or backed up remotely on IPFS.</p>
-                            </li>
-                            <li class="how__slider__content__list__item">
-                                <h2 class="how__slider__content__list__item__title">Share safely</h2>
-                                <p class="how__slider__content__list__item__content">If the user shares the photo in a group thread, the photo is re-encrypted with a shared key only available to thread members.</p>
-                            </li>
-                        </ul>
-                    </div>
+    </div>
+</section>
+<div class="break"></div>
+<section class="how anim">
+    <div class="center">
+        <div class="how__title">
+            <h2 class="anim">How it works</h2>
+        </div>
+        <div class="anim how__slider tablet">
+            <div class="how__slider__left"></div>
+            <div class="how__slider__center">
+                <div class="how__slider__content">
+                    <ul class="how__slider__content__list">
+                        <li class="how__slider__content__list__item__desktop">
+                            <h2 class="how__slider__content__list__item__title">Create an account</h2>
+                            <p class="how__slider__content__list__item__content">Every user gets a unique and secure
+                                private key that is yours and never shared.</p>
+                        </li>
+                        <li class="how__slider__content__list__item__desktop hide">
+                            <h2 class="how__slider__content__list__item__title">Save pictures</h2>
+                            <p class="how__slider__content__list__item__content">Every photo a user takes is encrypted
+                                with their private key and given a unique fingerprint.</p>
+                        </li>
+                        <li class="how__slider__content__list__item__desktop hide">
+                            <h2 class="how__slider__content__list__item__title">Track your memories</h2>
+                            <p class="how__slider__content__list__item__content">That fingerprint is stored in the
+                                user's digital wallet, where they keep track of all the photos they've taken.</p>
+                        </li>
+                        <li class="how__slider__content__list__item__desktop hide">
+                            <h2 class="how__slider__content__list__item__title">Sync every photo</h2>
+                            <p class="how__slider__content__list__item__content">If the user chooses, encrypted versions
+                                of the photo are synced across a user's devices or backed up remotely on IPFS.</p>
+                        </li>
+                        <li class="how__slider__content__list__item__desktop hide">
+                            <h2 class="how__slider__content__list__item__title">Share safely</h2>
+                            <p class="how__slider__content__list__item__content">If the user shares the photo in a group
+                                thread, the photo is re-encrypted with a shared key and broadcast to thread members.</p>
+                        </li>
+                    </ul>
+                    <ul class="how__slider__content__dots tablet flex-d">
+                        <li class="how__slider__content__dots__item how__slider__content__dots__item--active"></li>
+                        <li class="how__slider__content__dots__item"></li>
+                        <li class="how__slider__content__dots__item"></li>
+                        <li class="how__slider__content__dots__item"></li>
+                        <li class="how__slider__content__dots__item"></li>
+                    </ul>
                 </div>
             </div>
+            <div class="how__slider__right"></div>
         </div>
-    </section>
-    <section class="cta anim" id="cta">
-        <div class="container center">
-            <div class="cta__title">
-                <h2 class="anim">Built for securing user photos</h2>
-            </div>
-            <p class="anim cta__subtitle">Start loading your digital wallet with your most valuable memories</p>
-            <div class="anim cta__buttons flex-d">
-
-                <a href="https://www.producthunt.com/upcoming/textile-photos">
-                    <button class="anim button button--outline">
-                        <span class="button--outline__content">Join our waiting list</span>
-                    </button>
-                </a>
-
-                <!-- FUTURE STORE LINKS -->
-                <!--<a href="https://www.producthunt.com/upcoming/textile-photos" target="_blank">-->
-                    <!--<button class="button button&#45;&#45;none">-->
-                        <!--<span class="button__text">-->
-                            <!--<div class="button__playstore"></div>-->
-                        <!--</span>-->
-                    <!--</button>-->
-                <!--</a>-->
-                <!--<a href="https://www.producthunt.com/upcoming/textile-photos" target="_blank">-->
-                    <!--<button class="button button&#45;&#45;none">-->
-                        <!--<span class="button__text">-->
-                           <!--<div class="button__appstore"></div>-->
-                       <!--</span>-->
-                    <!--</button>-->
-                <!--</a>-->
-            </div>
-        </div>
-    </section>
-    <footer class="footer">
-        <div class="container">
-            <div class="footer__content flex-d">
-                <div class="footer__content__form">
-                    <form action="https://textile.us14.list-manage.com/subscribe/post?u=5d6937984c33e82d45cf7961a&amp;id=ed364a47a3" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate footer__content__form__container" target="_blank" novalidate>
-
-                        <input placeholder="Enter your e-mail address" type="email" value="" name="EMAIL" class="required email footer__content__form__container__input" id="mce-EMAIL">
-                        <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                        <input type="text" name="b_5d6937984c33e82d45cf7961a_ed364a47a3" tabindex="-1" value="" class="hide">
-                        <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button footer__content__form__container__button button button--primary">
-                    </form>
-                    <div class="footer__content__form__checkbox">
-                        <input class="footer__content__form__checkbox__input" id="check" type="checkbox">
-                        <label class="footer__content__form__checkbox__label" for="check">I want to receive news</label>
-                    </div>
+        <div class="anim how__slider mobile">
+            <div class="how__slider__center">
+                <div class="how__slider__content">
+                    <ul class="how__slider__content__list">
+                        <li class="how__slider__content__list__item">
+                            <h2 class="how__slider__content__list__item__title">Create an account</h2>
+                            <p class="how__slider__content__list__item__content">Every user gets a unique and secure
+                                private key that is theirs and never shared.</p>
+                        </li>
+                        <li class="how__slider__content__list__item">
+                            <h2 class="how__slider__content__list__item__title">Save pictures</h2>
+                            <p class="how__slider__content__list__item__content">Every photo a user takes is encrypted
+                                with their private key and given a unique fingerprint.</p>
+                        </li>
+                        <li class="how__slider__content__list__item">
+                            <h2 class="how__slider__content__list__item__title">Track your memories</h2>
+                            <p class="how__slider__content__list__item__content">That fingerprint is stored in the
+                                user's digital wallet, where they keep track of all the photos they've taken.</p>
+                        </li>
+                        <li class="how__slider__content__list__item">
+                            <h2 class="how__slider__content__list__item__title">Sync every photo</h2>
+                            <p class="how__slider__content__list__item__content">If the user chooses, encrypted versions
+                                of the photo are synced across a user's devices or backed up remotely on IPFS.</p>
+                        </li>
+                        <li class="how__slider__content__list__item">
+                            <h2 class="how__slider__content__list__item__title">Share safely</h2>
+                            <p class="how__slider__content__list__item__content">If the user shares the photo in a group
+                                thread, the photo is re-encrypted with a shared key only available to thread
+                                members.</p>
+                        </li>
+                    </ul>
                 </div>
-                <ul class="footer__links flex-d flex-m">
-                    <li class="footer__links__item">
-                        <a class="a--animated" href="https://github.com/textileio" target="_blank">GitHub</a>
-                    </li>
-                    <li class="footer__links__item">
-                        <a class="a--animated" href="https://medium.com/textileio" target="_blank">Blog</a>
-                    </li>
-                    <li class="footer__links__item">
-                        <a class="a--animated" href="https://twitter.com/Textile01" target="_blank">Twitter</a>
-                    </li>
-                    <li class="footer__links__item">
-                        <a class="a--animated" href="https://t.me/joinchat/AAAAAEfVwD37Wh0OpnlXKA" target="_blank">Telegram</a>
-                    </li>
-                </ul>
             </div>
         </div>
-    </footer>
-    <script src="statics/libs/smooth-scroll.js"></script>
-    <script src="statics/libs/wow.min.js"></script>
-    <script src="statics/libs/bodymovin.min.js"></script>
-    <script src="statics/scripts/scripts.js"></script>
+    </div>
+</section>
+<section class="cta anim" id="cta">
+    <div class="container center">
+        <div class="cta__title">
+            <h2 class="anim">Built for securing user photos</h2>
+        </div>
+        <p class="anim cta__subtitle">Start loading your digital wallet with your most valuable memories</p>
+        <div class="anim cta__buttons flex-d">
+
+            <a href="https://www.producthunt.com/upcoming/textile-photos">
+                <button class="anim button button--outline">
+                    <span class="button--outline__content">Join our waiting list</span>
+                </button>
+            </a>
+
+            <!-- FUTURE STORE LINKS -->
+            <!--<a href="https://www.producthunt.com/upcoming/textile-photos" target="_blank">-->
+            <!--<button class="button button&#45;&#45;none">-->
+            <!--<span class="button__text">-->
+            <!--<div class="button__playstore"></div>-->
+            <!--</span>-->
+            <!--</button>-->
+            <!--</a>-->
+            <!--<a href="https://www.producthunt.com/upcoming/textile-photos" target="_blank">-->
+            <!--<button class="button button&#45;&#45;none">-->
+            <!--<span class="button__text">-->
+            <!--<div class="button__appstore"></div>-->
+            <!--</span>-->
+            <!--</button>-->
+            <!--</a>-->
+        </div>
+    </div>
+</section>
+<footer class="footer">
+    <div class="container">
+        <div class="footer__content flex-d">
+            <div class="footer__content__form">
+                <form action="https://textile.us14.list-manage.com/subscribe/post?u=5d6937984c33e82d45cf7961a&amp;id=ed364a47a3"
+                      method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form"
+                      class="validate footer__content__form__container" target="_blank" novalidate>
+
+                    <input placeholder="Enter your e-mail address" type="email" value="" name="EMAIL"
+                           class="required email footer__content__form__container__input" id="mce-EMAIL">
+                    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                    <input type="text" name="b_5d6937984c33e82d45cf7961a_ed364a47a3" tabindex="-1" value=""
+                           class="hide">
+                    <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe"
+                           class="button footer__content__form__container__button button button--primary">
+                </form>
+                <div class="footer__content__form__checkbox">
+                    <input class="footer__content__form__checkbox__input" id="check" type="checkbox">
+                    <label class="footer__content__form__checkbox__label" for="check">I want to receive news</label>
+                </div>
+            </div>
+            <ul class="footer__links flex-d flex-m">
+                <li class="footer__links__item">
+                    <a class="a--animated" href="https://github.com/textileio" target="_blank">GitHub</a>
+                </li>
+                <li class="footer__links__item">
+                    <a class="a--animated" href="https://medium.com/textileio" target="_blank">Blog</a>
+                </li>
+                <li class="footer__links__item">
+                    <a class="a--animated" href="https://twitter.com/Textile01" target="_blank">Twitter</a>
+                </li>
+                <li class="footer__links__item">
+                    <a class="a--animated" href="https://t.me/joinchat/AAAAAEfVwD37Wh0OpnlXKA"
+                       target="_blank">Telegram</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</footer>
+<script>
+  var n=document.querySelector(".loader__num"),body=document.querySelector("body"),l=document.querySelector(".loader"),he=document.querySelector(".hero__heading"),su=document.querySelector(".hero__subheading"),im=document.querySelector(".hero__animation"),heroAnimNode=document.querySelector(".hero__animation"),step1AnimNode=document.querySelector(".steps__content__image__list__item--1"),step2AnimNode=document.querySelector(".steps__content__image__list__item--2"),step3AnimNode=document.querySelector(".steps__content__image__list__item--3"),loaderBarNode=document.querySelector(".loader__bar"),num=0;function loadJSONFiles(){window.loadedAnimationsList=[],animationsList.forEach(function(o){window.loadedAnimationsList.push(bodymovin.loadAnimation({container:o.node,renderer:"svg",loop:o.loop||!1,autoplay:!1,path:o.path}))}),loadedAnimationsList.forEach(function(o){o.addEventListener("DOMLoaded",function(){onLoad("anim")})})}function done(o){console.log("done",o,count),l.classList.toggle("hide"),body.classList.toggle("locked"),he.classList.toggle("show-text"),su.classList.toggle("show-text"),im.classList.toggle("show-image")}function onLoad(o){console.log("load",o,count),num=Math.round(num+25/listsLength*count),n.innerText=num,loaderBarNode.style.width=num+"%",++count===listsLength&&script("statics/scripts/scripts.js"),listsLength<count&&done(o),o.includes("bodymovin")&&loadJSONFiles()}var count=0;function script(o){var t=document.createElement("script");t.type="text/javascript",t.src=o,t.onload=function(){onLoad(o)},body.appendChild(t)}var urls=["statics/libs/smooth-scroll.js","statics/libs/bodymovin.min.js","statics/libs/wow.min.js"],animationsList=[{node:heroAnimNode,path:"statics/bodymovin/hero/data.json",loop:!0},{node:step1AnimNode,path:"statics/bodymovin/step1/data.json"},{node:step2AnimNode,path:"statics/bodymovin/step2/data.json"},{node:step3AnimNode,path:"statics/bodymovin/step3/data.json"}],listsLength=animationsList.length+urls.length;function asyncLoad(){for(var o=0;o<urls.length;o++)script(urls[o])}window.attachEvent?window.attachEvent("onload",asyncLoad):window.addEventListener("load",asyncLoad,!1);
+</script>
 </body>
 </html>

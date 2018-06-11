@@ -7,9 +7,10 @@
   "author": "keyserfaty <keserfaty@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "pushstate-server src && gulp",
-    "start:sass": "gulp",
-    "build": ""
+    "start": "npm-run-all -p dev sass",
+    "dev": "pushstate-server src",
+    "sass": "gulp",
+    "build": "gulp build"
   },
   "dependencies": {
     "browser-sync": "^2.24.4",

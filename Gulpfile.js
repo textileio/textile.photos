@@ -34,12 +34,6 @@ gulp.task('useref', function(){
       .pipe(gulp.dest('dist'))
 });
 
-// gulp.task('sass', function() {
-//   return gulp.src('src/**/*.scss') // Gets all files ending with .scss in app/scss
-//       .pipe(sass())
-//       .pipe(gulp.dest('dist'))
-// });
-
 gulp.task('sass', function() {
   return gulp.src('src/**/*.scss') // Gets all files ending with .scss in app/scss and children dirs
       .pipe(sass())
