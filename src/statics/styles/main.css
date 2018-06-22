@@ -867,6 +867,9 @@ p, label {
     animation: fadeIn cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.75s forwards;
     animation-delay: .24s; }
 
+.steps.invites {
+  padding-bottom: 10px; }
+
 .blog {
   padding-bottom: 72px; }
   @media screen and (min-width: 768px) {
@@ -1578,6 +1581,9 @@ p, label {
 .growLeft {
   -webkit-animation-name: growLeft;
   animation-name: growLeft; }
+
+.invite-username {
+  font-weight: 500; }
 
 body {
   background: url("../images/background.svg"), no-repeat;
