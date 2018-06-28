@@ -1582,7 +1582,8 @@ p, label {
   -webkit-animation-name: growLeft;
   animation-name: growLeft; }
 
-.invite-username {
+.invite-username,
+.invite-code {
   font-weight: 500; }
 
 body {

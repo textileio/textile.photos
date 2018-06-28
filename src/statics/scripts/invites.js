@@ -1,12 +1,4 @@
 (function () {
-  //* Wow init
-  new WOW({
-    boxClass:     'anim',
-    animateClass: 'animated',
-    offset:       0,
-    mobile:       true,
-    live:         true
-  }).init()
 
   var regex = /[?&]([^=#]+)=([^&#]*)/g,
       url = window.location.href,
@@ -15,10 +7,24 @@
   while(match = regex.exec(url)) {
     params[match[1]] = match[2];
   }
-  console.log(params)
   if ('from' in params) {
     document.getElementsByClassName("invite-username")[0].innerText = params['from'];
   }
+  if ('referral' in params) {
+    document.getElementsByClassName("invite-code")[0].innerText = params['referral'];
+  }
+  if ('internal' in params) {
+    document.getElementsByClassName("invite-type")[0].innerText = ' added you to the list';
+  }
+
+  //* Wow init
+  new WOW({
+    boxClass:     'anim',
+    animateClass: 'animated',
+    offset:       0,
+    mobile:       true,
+    live:         true
+  }).init()
 
   var step1AnimNode=document.querySelector(".steps__content__image__list__item--1")
   var step2AnimNode=document.querySelector(".steps__content__image__list__item--2")
@@ -71,15 +77,14 @@
       boxNode.style.top = stepBoxPositions.tablet[step] + 'px'
     }
 
-    for (var x = 0; x < stepImagesNodes.length - 1; x++) {
+    for (var x = 0; x < stepImagesNodes.length; x++) {
+      var next = x + 1 < stepImagesNodes.length ? x + 1 : 0
       if (stepImagesNodes[x].dataset.image !== step) {
         stepImagesNodes[x].classList.add('hide')
-        loadedAnimationsList[x + 1].pause()
+        loadedAnimationsList[next].pause()
       } else {
         stepImagesNodes[x].classList.remove('hide')
-        if (loadedAnimationsList[x + 1].isPaused) {
-          loadedAnimationsList[x + 1].goToAndPlay(0)
-        }
+        loadedAnimationsList[x].goToAndPlay(0)
       }
     }
   }
@@ -87,12 +92,12 @@
   /**
    * Animates every step on mouser over on each one of the titles
    */
-  stepsBoxesContainerNode.addEventListener('mouseover', function (e) {
-    if (!e.target.classList.contains('steps__content__list__item')) return
-    var step = e.target.dataset.step
-    animateSteps(step)
-    activeStep = step
-  })
+  // stepsBoxesContainerNode.addEventListener('mouseover', function (e) {
+  //   if (!e.target.classList.contains('steps__content__list__item')) return
+  //   var step = e.target.dataset.step
+  //   animateSteps(step)
+  //   activeStep = step
+  // })
 
   /**
    * Animates steps automatically every 4 seconds

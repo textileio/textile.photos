@@ -3,7 +3,7 @@ var sass = require('gulp-sass')
 var useref = require('gulp-useref')
 var uglify = require('gulp-uglify')
 var gulpIf = require('gulp-if')
-var ext_replace = require('gulp-ext-replace')
+var gulpCopy = require('gulp-copy')
 var rename = require("gulp-rename")
 var cssnano = require('gulp-cssnano')
 var cache = require('gulp-cache')
@@ -42,10 +42,11 @@ gulp.task('default',function() {
 })
 
 gulp.task('useref', function(){
-  return gulp.src(['src/**/*.+(html|js|css|json)'])
+  return gulp.src(['src/**/*.+(html|js|css|json)', 'src/.*/apple-app-site-association'])
       .pipe(useref())
+      // .pipe(gulpIf('**/.well-known/*', gulpCopy()))
       .pipe(gulpIf('*.js', uglify()))
-      // Minifies only if it's a CSS file
+      // Minifies only if it' s a CSS file
       .pipe(gulpIf('*.css', cssnano()))
       .pipe(gulpIf('**/new.html', rename(function(file) {
         file.extname = '';
