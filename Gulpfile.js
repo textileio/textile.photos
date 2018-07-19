@@ -12,6 +12,7 @@ var browserSync = require('browser-sync').create()
 var reload      = browserSync.reload;
 var runSequence = require('run-sequence')
 var del = require('del')
+var l10n = require('gulp-l10n')
 
 gulp.task('serve', function() {
   browserSync.init({
@@ -48,7 +49,7 @@ gulp.task('useref', function(){
       .pipe(gulpIf('*.js', uglify()))
       // Minifies only if it' s a CSS file
       .pipe(gulpIf('*.css', cssnano()))
-      .pipe(gulpIf('**/new.html', rename(function(file) {
+      .pipe(gulpIf(['**/new.html', '**/device.html'], rename(function(file) {
         file.extname = '';
       })))
       .pipe(gulp.dest('dist'))
