@@ -2,15 +2,19 @@ Welcome to Sans Bureau's Landing Boilerplate 🌈
 
 ---
 
-### How to start this project?
-Install:
-
-`yarn global add gulp pushstate-server`
+### How to start this project for the first time?
+Run:
 
 `yarn install`
 
-And then run this two commands on separate windows to start local server and to run compilation of sass files:
+### How to start working on development mode?
+Run:
 
 `yarn start`
 
-`yarn run start:sass`
+### How to build files for production?
+Run:
+
+`yarn build`
+
+That will create a folder called `dist` with minified versions of the files.

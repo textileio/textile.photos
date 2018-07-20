@@ -610,9 +610,7 @@ p, label {
   color: #2E364E; }
   .loader__bar {
     background-color: #2524FF;
-    height: 4px;
-    animation-name: widthLength;
-    animation-duration: 1.3s; }
+    height: 4px; }
   .loader__num {
     margin-left: 40px;
     margin-top: 32px; }
@@ -904,7 +902,7 @@ p, label {
         margin: 0 auto; } }
     .blog__content__image img {
       display: block;
-      height: -webkit-fill-available; }
+      width: 290px; }
     .blog__content__text {
       padding: 40px 32px;
       text-align: left;

@@ -7,11 +7,12 @@
   "author": "keyserfaty <keserfaty@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "pushstate-server src && gulp",
-    "start:sass": "gulp",
-    "build": ""
+    "start": "npm-run-all -p dev sass",
+    "dev": "pushstate-server src",
+    "sass": "gulp",
+    "build": "gulp build"
   },
-  "dependencies": {
+  "devDependencies": {
     "browser-sync": "^2.24.4",
     "del": "^3.0.0",
     "gulp-cache": "^1.0.2",
@@ -20,10 +21,9 @@
     "gulp-uglify": "^3.0.0",
     "gulp-useref": "^3.1.5",
     "pushstate-server": "^3.0.1",
-    "run-sequence": "^2.2.1"
-  },
-  "devDependencies": {
+    "run-sequence": "^2.2.1",
     "gulp": "^3.9.1",
-    "gulp-sass": "^3.1.0"
+    "gulp-sass": "^3.1.0",
+    "npm-run-all": "^4.1.3"
   }
 }
