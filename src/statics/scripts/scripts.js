@@ -76,30 +76,29 @@
       var status = xhr.status;
       if (status === 200) {
         var title = xhr.response.items[0].title;
-        if (title.length > 60) {
-          title = title.substring(0,57) + '...'
+        var titleLimit = 75
+        if (title.length > titleLimit) {
+          title = title.substring(0,titleLimit - 3) + '...'
         }
         var span= document.createElement('span');
         span.innerHTML= xhr.response.items[0].description;
         var content = span.textContent || span.innerText;
-        if (content.length > 100) {
-          content = content.substring(0,97);
+        var contentLimit = 80 + (3 - Math.ceil(title.length / 25)) * 30
+        if (content.length > contentLimit) {
+          content = content.substring(0,contentLimit - 3);
           content = content.substring(0, content.lastIndexOf(" ")) + '...'
         }
         var link = xhr.response.items[0].link;
-        document.getElementsByClassName("blog__content__text__title")[0].innerHTML = title;
-        document.getElementsByClassName("blog__content__text__content")[0].innerHTML = content;
+        document.getElementsByClassName("blog__content__text__title")[0].innerText = title;
+        document.getElementsByClassName("blog__content__text__content")[0].innerText = content;
         document.getElementsByClassName("blog__content__text__link")[0].href = link;
       }
     };
     xhr.send();
   }
+  setTimeout(loadRSS, 50);
 
   //* Bodymovin init
-  loadedAnimationsList[0].addEventListener('DOMLoaded', function() {
-    setTimeout(loadRSS, 1);
-  })
-
   loadedAnimationsList[0].setSpeed = 0.5
   loadedAnimationsList[0].setQuality = 'medium'
   loadedAnimationsList[0].play()
