@@ -1,0 +1,15 @@
+{
+    "applinks": {
+        "apps": [],
+        "details": [
+            {
+                "appID": "5VHA5U5FY8.io.textile.Threads",
+                "paths": [ "/threads/*"]
+            },
+            {
+                "appID": "5VHA5U5FY8.io.textile.Wallet",
+                "paths": [ "/clients/*", "/invites/*"]
+            }
+        ]
+    }
+}
