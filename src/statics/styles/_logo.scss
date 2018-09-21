@@ -4,5 +4,10 @@
   width: 130px;
   height: 40px;
 
-  @media screen and (min-width: 768px) {}
+  @media screen and (max-width: 520px) {
+    background: url('../images/logo/logo-narrow.png'), no-repeat;
+    background-size: cover;
+    width: 40px;
+    height: 40px;
+  }
 }

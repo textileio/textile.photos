@@ -235,6 +235,12 @@ p, label {
   background-size: cover;
   width: 130px;
   height: 40px; }
+  @media screen and (max-width: 520px) {
+    .logo {
+      background: url("../images/logo/logo-narrow.png"), no-repeat;
+      background-size: cover;
+      width: 40px;
+      height: 40px; } }
 
 .button {
   font-family: 'Rubik', sans-serif;
@@ -871,10 +877,10 @@ p, label {
   padding-bottom: 10px; }
 
 .blog {
-  padding-bottom: 72px; }
+  padding-bottom: 22px; }
   @media screen and (min-width: 768px) {
     .blog {
-      padding-bottom: 172px; } }
+      padding-bottom: 32px; } }
   .blog__title {
     margin-bottom: 24px;
     overflow: hidden; }
@@ -917,10 +923,10 @@ p, label {
         margin-bottom: 32px; }
 
 .tech {
-  padding: 56px 0; }
+  padding: 36px 0; }
   @media screen and (min-width: 1024px) {
     .tech {
-      padding: 80px 0; } }
+      padding: 50px 0; } }
   .tech__title {
     margin-bottom: 24px;
     overflow: hidden; }
@@ -980,10 +986,10 @@ p, label {
       transition: background 0.3s ease; }
 
 .how {
-  padding: 72px 0; }
+  padding: 22px 0 2px 0; }
   @media screen and (min-width: 768px) {
     .how {
-      padding: 172px 0; } }
+      padding: 32px 0 72px 0; } }
   .how__title {
     margin-bottom: 10px;
     overflow: hidden; }
@@ -1086,10 +1092,12 @@ p, label {
           margin-right: 0; }
 
 .cta {
-  padding-bottom: 72px; }
+  padding-bottom: 22px;
+  padding-top: 72px; }
   @media screen and (min-width: 768px) {
     .cta {
-      padding-bottom: 172px; } }
+      padding-bottom: 32px;
+      padding-top: 172px; } }
   .cta__title {
     margin-bottom: 24px;
     overflow: hidden; }
@@ -1105,34 +1113,77 @@ p, label {
       .cta__subtitle {
         max-width: 70%;
         margin: 0 auto 56px; } }
-  .cta__buttons {
-    opacity: 0;
-    animation: fadeIn cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.75s forwards;
-    animation-delay: .6s; }
-    @media screen and (min-width: 768px) {
-      .cta__buttons {
-        display: flex;
-        justify-content: center; } }
-  .cta .button:first-child {
+  .cta .buttonForStore:first-child {
     margin-bottom: 25px; }
     @media screen and (min-width: 768px) {
-      .cta .button:first-child {
+      .cta .buttonForStore:first-child {
         margin-bottom: 0;
         margin-right: 21px; } }
-  .cta .button__appstore {
+  .cta .buttonForStore__appstore {
     background: url("../images/appstore_badge.svg") no-repeat;
     background-size: cover;
     width: 265px;
     height: 64px;
     position: relative;
     z-index: 1; }
-  .cta .button__playstore {
+  .cta .buttonForStore__playstore {
     background: url("../images/playstore_badge.svg") no-repeat;
     background-size: cover;
     width: 265px;
     height: 64px;
     position: relative;
     z-index: 1; }
+  .cta__waitinglist {
+    padding-bottom: 11px;
+    max-width: 380px;
+    flex: 1;
+    margin: 0 auto; }
+    @media screen and (min-width: 768px) {
+      .cta__waitinglist {
+        padding-bottom: 0;
+        display: flex;
+        justify-content: center; } }
+    .cta__waitinglist__form {
+      display: flex; }
+      .cta__waitinglist__form__input {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        -ms-appearance: none;
+        -o-appearance: none;
+        appearance: none;
+        background: none;
+        border: 2px solid #CBD8E5;
+        padding-left: 22px;
+        border-radius: 30px 0 0 30px;
+        font-family: 'Rubik', sans-serif;
+        font-size: 16px;
+        color: #2E364E;
+        letter-spacing: 0;
+        display: block;
+        width: 100%; }
+        .cta__waitinglist__form__input::placeholder {
+          font-family: 'Rubik', sans-serif;
+          font-size: 16px;
+          color: #2E364E;
+          letter-spacing: 0;
+          opacity: .6; }
+        .cta__waitinglist__form__input:focus {
+          border-color: #2524FF; }
+      .cta__waitinglist__form__button {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        -ms-appearance: none;
+        -o-appearance: none;
+        appearance: none;
+        display: block;
+        border-radius: 0 30px 30px 0;
+        margin-left: -2px;
+        font-family: 'Rubik', sans-serif;
+        font-size: 13px;
+        color: #FFFFFF;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+        padding: 16px 24px; }
 
 .footer__content {
   padding: 56px 0;
@@ -1158,28 +1209,34 @@ p, label {
           margin-bottom: 0; } }
       .footer__content__form__checkbox__input {
         -webkit-appearance: none;
+        -moz-appearance: none;
+        -ms-appearance: none;
+        -o-appearance: none;
+        appearance: none;
         background-color: transparent;
         border: 1px solid #2E364E;
         border-radius: 2px;
         padding: 6px;
         margin-right: 8px; }
-        .footer__content__form__checkbox__input:active, .footer__content__form__checkbox__input:checked:active {
+        .footer__content__form__checkbox__input:active {
           background-color: rgba(37, 36, 255, 0.5); }
-        .footer__content__form__checkbox__input:checked {
-          background-color: #2524FF;
-          border-color: #2524FF; }
     .footer__content__form__container {
       display: flex; }
       .footer__content__form__container__input {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        -ms-appearance: none;
+        -o-appearance: none;
+        appearance: none;
         background: none;
         border: 2px solid #CBD8E5;
+        padding-left: 22px;
         border-radius: 30px 0 0 30px;
         font-family: 'Rubik', sans-serif;
         font-size: 16px;
         color: #2E364E;
         letter-spacing: 0;
         display: block;
-        padding-left: 24px;
         width: 100%;
         -webkit-transition: all 0.3s ease;
         -moz-transition: all 0.3s ease;
@@ -1194,6 +1251,11 @@ p, label {
         .footer__content__form__container__input:focus {
           border-color: #2524FF; }
       .footer__content__form__container__button {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        -ms-appearance: none;
+        -o-appearance: none;
+        appearance: none;
         display: block;
         border-radius: 0 30px 30px 0;
         margin-left: -2px;
@@ -1215,13 +1277,16 @@ p, label {
     @media screen and (min-width: 768px) {
       .footer__links__item {
         margin-left: 16px; } }
+    .footer__links__item .highlight {
+      color: #F9FBFF; }
 
 .break {
   max-width: 300px;
   height: 1px;
   background-color: #CBD8E5;
   opacity: .6;
-  margin: 0 auto; }
+  margin: 0 auto;
+  margin-bottom: 72px; }
 
 .show-text {
   visibility: visible !important;

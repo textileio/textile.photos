@@ -78,7 +78,7 @@
                 <li class="nav__list__item">
                     <a href="#cta">
                         <button class="button button--primary-animate">
-                            <span class="button--primary-animate__content">Get it now</span>
+                            <span class="button--primary-animate__content">Sign up</span>
                         </button>
                     </a>
                 </li>
@@ -140,12 +140,65 @@
         </ul>
     </div>
 </section>
+<section class="cta" id="cta">
+    <div class="container center">
+        <div class="cta__title">
+            <h2 class="anim">Get an invite</h2>
+        </div>
+        <p class="anim cta__subtitle">Just enter and confirm your email. We're sending 100s of new invites each week.</p>
+
+        <div class="cta__waitinglist">
+            <form
+                    action="https://api.producthunt.com/widgets/upcoming/v1/upcoming/textile-photos/forms"
+                    method="post"
+                    id="ph-email-form"
+                    name="ph-email-form"
+                    target="_blank"
+                    class="cta__waitinglist__form"
+            >
+                <input
+                        placeholder="Enter email"
+                        type="email"
+                        value=""
+                        name="email"
+                        id="ph-email"
+                        class="cta__waitinglist__form__input"
+                >
+                <input
+                        type="submit"
+                        value="Waiting List"
+                        name="subscribe"
+                        id="ph-subscribe-button"
+                        class="cta__waitinglist__form__button button button--primary"
+                >
+            </form>
+        </div>
+        <div class="anim cta__buttons flex-d">
+
+            <!-- FUTURE STORE LINKS -->
+            <!--<a href="https://www.producthunt.com/upcoming/textile-photos" target="_blank">-->
+            <!--<button class="button button&#45;&#45;none">-->
+            <!--<span class="button__text">-->
+            <!--<div class="button__playstore"></div>-->
+            <!--</span>-->
+            <!--</button>-->
+            <!--</a>-->
+            <!--<a href="https://www.producthunt.com/upcoming/textile-photos" target="_blank">-->
+            <!--<button class="button button&#45;&#45;none">-->
+            <!--<span class="button__text">-->
+            <!--<div class="button__appstore"></div>-->
+            <!--</span>-->
+            <!--</button>-->
+            <!--</a>-->
+        </div>
+    </div>
+</section>
 <section class="steps anim fadeInUp">
     <div class="container center">
         <div class="steps__title">
-            <h2 class="anim">Three simple steps</h2>
+            <h2 class="anim">Decentralized Sharing</h2>
         </div>
-        <p class="anim steps__subtitle">Just a few minutes to start. Afterwards just sit back and have fun.</p>
+        <p class="anim steps__subtitle">Once we email you an invite, it's just three steps join the future.</p>
         <div class="anim steps__content flex-d">
             <ul class="steps__content__list">
                 <li data-step="0" class="steps__content__list__item flex-d flex-m">
@@ -193,11 +246,12 @@
         </div>
         <a href="#cta">
             <button class="anim button button--outline">
-                <span class="button--outline__content">Let's start</span>
+                <span class="button--outline__content">Get an invite</span>
             </button>
         </a>
     </div>
 </section>
+<div class="break"></div>
 <section class="blog anim fadeInUp">
     <div class="container center">
         <div class="blog__title">
@@ -220,7 +274,6 @@
         </div>
     </div>
 </section>
-<div class="break"></div>
 <section class="tech anim">
     <div class="container center">
         <div class="tech__title">
@@ -251,7 +304,6 @@
         </div>
     </div>
 </section>
-<div class="break"></div>
 <section class="how anim">
     <div class="center">
         <div class="how__title">
@@ -335,36 +387,17 @@
         </div>
     </div>
 </section>
-<section class="cta anim" id="cta">
+<div class="break"></div>
+<section class="steps">
     <div class="container center">
-        <div class="cta__title">
-            <h2 class="anim">Built for securing user photos</h2>
+        <div class="steps__title">
+            <h2 class="anim">Join Textile Photos</h2>
         </div>
-        <p class="anim cta__subtitle">Start loading your digital wallet with your most valuable memories</p>
-        <div class="anim cta__buttons flex-d">
-
-            <a href="https://www.producthunt.com/upcoming/textile-photos">
-                <button class="anim button button--outline">
-                    <span class="button--outline__content">Join our waiting list</span>
-                </button>
-            </a>
-
-            <!-- FUTURE STORE LINKS -->
-            <!--<a href="https://www.producthunt.com/upcoming/textile-photos" target="_blank">-->
-            <!--<button class="button button&#45;&#45;none">-->
-            <!--<span class="button__text">-->
-            <!--<div class="button__playstore"></div>-->
-            <!--</span>-->
-            <!--</button>-->
-            <!--</a>-->
-            <!--<a href="https://www.producthunt.com/upcoming/textile-photos" target="_blank">-->
-            <!--<button class="button button&#45;&#45;none">-->
-            <!--<span class="button__text">-->
-            <!--<div class="button__appstore"></div>-->
-            <!--</span>-->
-            <!--</button>-->
-            <!--</a>-->
-        </div>
+        <a href="#cta">
+            <button class="anim button button--outline">
+                <span class="button--outline__content">Get an invite</span>
+            </button>
+        </a>
     </div>
 </section>
 <footer class="footer">
@@ -375,12 +408,12 @@
                       method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form"
                       class="validate footer__content__form__container" target="_blank" novalidate>
 
-                    <input placeholder="Enter your e-mail address" type="email" value="" name="EMAIL"
+                    <input placeholder="Enter email" type="email" value="" name="EMAIL"
                            class="required email footer__content__form__container__input" id="mce-EMAIL">
                     <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
                     <input type="text" name="b_5d6937984c33e82d45cf7961a_ed364a47a3" tabindex="-1" value=""
                            class="hide">
-                    <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe"
+                    <input type="submit" value="Mailing List" name="subscribe" id="mc-embedded-subscribe"
                            class="button footer__content__form__container__button button button--primary">
                 </form>
                 <div class="footer__content__form__checkbox">
@@ -401,6 +434,10 @@
                 <li class="footer__links__item">
                     <a class="a--animated" href="https://t.me/joinchat/AAAAAEfVwD37Wh0OpnlXKA"
                        target="_blank">Telegram</a>
+                </li>
+                <li class="footer__links__item">
+                    <a class="a--animated highlight" href="#cta"
+                       target="_blank">Get an Invite</a>
                 </li>
             </ul>
         </div>

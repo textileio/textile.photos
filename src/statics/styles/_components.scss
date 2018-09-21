@@ -387,10 +387,10 @@
 }
 
 .blog {
-  padding-bottom: 72px;
+  padding-bottom: 22px;
 
   @media screen and (min-width: 768px) {
-    padding-bottom: 172px;
+    padding-bottom: 32px;
   }
 
   &__title {
@@ -455,10 +455,10 @@
 }
 
 .tech {
-  padding: 56px 0;
+  padding: 36px 0;
 
   @media screen and (min-width: 1024px) {
-    padding: 80px 0;
+    padding: 50px 0;
   }
 
   &__title {
@@ -545,10 +545,10 @@
 }
 
 .how {
-  padding: 72px 0;
+  padding: 22px 0 2px 0;
 
   @media screen and (min-width: 768px) {
-    padding: 172px 0;
+    padding: 32px 0 72px 0;
   }
 
   &__title {
@@ -697,10 +697,12 @@
 }
 
 .cta {
-  padding-bottom: 72px;
+  padding-bottom: 22px;
+  padding-top: 72px;
 
   @media screen and (min-width: 768px) {
-    padding-bottom: 172px;
+    padding-bottom: 32px;
+    padding-top: 172px;
   }
 
   &__title {
@@ -726,19 +728,7 @@
     }
   }
 
-  &__buttons {
-
-    opacity: 0;
-    animation: fadeIn cubic-bezier(0.785, 0.135, 0.15, 0.86) .75s forwards;
-    animation-delay: .6s;
-
-    @media screen and (min-width: 768px) {
-      display: flex;
-      justify-content: center;
-    }
-  }
-
-  .button {
+  .buttonForStore {
     &:first-child {
       margin-bottom: 25px;
 
@@ -764,6 +754,70 @@
       height: 64px;
       position: relative;
       z-index: 1;
+    }
+  }
+
+  &__waitinglist {
+    padding-bottom: 11px;
+    max-width: 380px;
+    flex: 1;
+    margin: 0 auto;
+
+    @media screen and (min-width: 768px) {
+      padding-bottom: 0;
+      display: flex;
+      justify-content: center;
+    }
+
+    &__form {
+      display: flex;
+
+      &__input {
+        -webkit-appearance:     none;
+        -moz-appearance:        none;
+        -ms-appearance:         none;
+        -o-appearance:          none;
+        appearance:             none;
+        background: none;
+        border: 2px solid #CBD8E5;
+        padding-left: 22px;
+        border-radius: 30px 0 0 30px;
+        font-family: 'Rubik', sans-serif;
+        font-size: 16px;
+        color: #2E364E;
+        letter-spacing: 0;
+        display: block;
+        width: 100%;
+
+        &::placeholder {
+          font-family: 'Rubik', sans-serif;
+          font-size: 16px;
+          color: #2E364E;
+          letter-spacing: 0;
+          opacity: .6;
+        }
+
+        &:focus {
+          border-color: $blue;
+        }
+      }
+
+      &__button {
+        -webkit-appearance:     none;
+        -moz-appearance:        none;
+        -ms-appearance:         none;
+        -o-appearance:          none;
+        appearance:             none;
+        display: block;
+        border-radius: 0 30px 30px 0;
+        margin-left: -2px;
+        font-family: 'Rubik', sans-serif;
+        font-size: 13px;
+        color: #FFFFFF;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+        padding: 16px 24px;
+      }
     }
   }
 }
@@ -798,24 +852,20 @@
         }
 
         &__input {
-          -webkit-appearance: none;
+          -webkit-appearance:     none;
+          -moz-appearance:        none;
+          -ms-appearance:         none;
+          -o-appearance:          none;
+          appearance:             none;
           background-color: transparent;
           border: 1px solid #2E364E;
           border-radius: 2px;
           padding: 6px;
           margin-right: 8px;
 
-          &:active, &:checked:active {
+          &:active {
             background-color: transparentize($blue, 0.5);
           }
-
-          &:checked {
-            background-color: $blue;
-            border-color: $blue;
-          }
-        }
-
-        &__label {
         }
       }
 
@@ -823,15 +873,20 @@
         display: flex;
 
         &__input {
+          -webkit-appearance:     none;
+          -moz-appearance:        none;
+          -ms-appearance:         none;
+          -o-appearance:          none;
+          appearance:             none;
           background: none;
           border: 2px solid #CBD8E5;
+          padding-left: 22px;
           border-radius: 30px 0 0 30px;
           font-family: 'Rubik', sans-serif;
           font-size: 16px;
           color: #2E364E;
           letter-spacing: 0;
           display: block;
-          padding-left: 24px;
           width: 100%;
           -webkit-transition: all 0.3s ease;
           -moz-transition: all 0.3s ease;
@@ -852,6 +907,11 @@
         }
 
         &__button {
+          -webkit-appearance:     none;
+          -moz-appearance:        none;
+          -ms-appearance:         none;
+          -o-appearance:          none;
+          appearance:             none;
           display: block;
           border-radius: 0 30px 30px 0;
           margin-left: -2px;
@@ -880,6 +940,9 @@
       @media screen and (min-width: 768px) {
         margin-left: 16px;
       }
+      .highlight {
+        color: $light-blue
+      }
     }
   }
 }
@@ -890,6 +953,7 @@
   background-color: #CBD8E5;
   opacity: .6;
   margin: 0 auto;
+  margin-bottom: 72px;
 }
 
 .show-text {
