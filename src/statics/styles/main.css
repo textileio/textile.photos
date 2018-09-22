@@ -1133,6 +1133,13 @@ p, label {
     height: 64px;
     position: relative;
     z-index: 1; }
+  .cta__link {
+    width: 100%;
+    display: block; }
+    .cta__link__ph {
+      font-size: 10px;
+      color: #4264FB;
+      text-decoration: underline; }
   .cta__waitinglist {
     padding-bottom: 11px;
     max-width: 380px;
@@ -1144,7 +1151,8 @@ p, label {
         display: flex;
         justify-content: center; } }
     .cta__waitinglist__form {
-      display: flex; }
+      display: flex;
+      margin-bottom: 12px; }
       .cta__waitinglist__form__input {
         -webkit-appearance: none;
         -moz-appearance: none;
@@ -1207,12 +1215,10 @@ p, label {
       @media screen and (min-width: 768px) {
         .footer__content__form__checkbox {
           margin-bottom: 0; } }
+      .footer__content__form__checkbox__label {
+        padding-left: 24px;
+        font-size: 12px; }
       .footer__content__form__checkbox__input {
-        -webkit-appearance: none;
-        -moz-appearance: none;
-        -ms-appearance: none;
-        -o-appearance: none;
-        appearance: none;
         background-color: transparent;
         border: 1px solid #2E364E;
         border-radius: 2px;
@@ -1295,6 +1301,10 @@ p, label {
 .show-image {
   visibility: visible !important;
   animation-name: fadeIn !important; }
+
+@media screen and (max-width: 768px) {
+  .hidden-small {
+    display: none; } }
 
 .icon {
   display: block; }

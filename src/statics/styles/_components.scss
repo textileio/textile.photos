@@ -757,6 +757,17 @@
     }
   }
 
+
+  &__link {
+    width: 100%;
+    display: block;
+    &__ph {
+      font-size: 10px;
+      color: $link-blue;
+      text-decoration: underline;
+    }
+  }
+
   &__waitinglist {
     padding-bottom: 11px;
     max-width: 380px;
@@ -771,6 +782,7 @@
 
     &__form {
       display: flex;
+      margin-bottom: 12px;
 
       &__input {
         -webkit-appearance:     none;
@@ -851,12 +863,11 @@
           margin-bottom: 0;
         }
 
+        &__label {
+          padding-left: 24px;
+          font-size: 12px;
+        }
         &__input {
-          -webkit-appearance:     none;
-          -moz-appearance:        none;
-          -ms-appearance:         none;
-          -o-appearance:          none;
-          appearance:             none;
           background-color: transparent;
           border: 1px solid #2E364E;
           border-radius: 2px;
@@ -964,4 +975,10 @@
 .show-image {
   visibility: visible!important;
   animation-name: fadeIn!important;
+}
+
+.hidden-small {
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
 }
