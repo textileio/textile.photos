@@ -134,13 +134,13 @@
         </div>
     </div>
 </section>
-<section class="cta" id="cta">
+<section class="store" id="store">
     <div class="container center">
-        <div class="cta__title">
+        <div class="store__title">
             <h2>Install Textile Photos</h2>
         </div>
-        <p class="cta__subtitle">Start loading your digital wallet with your most valuable memories</p>
-        <div class="cta__buttons flex-d">
+        <p class="store__subtitle">Start loading your digital wallet with your most valuable memories</p>
+        <div class="store__buttons flex-d">
             <a href="https://play.google.com/store/apps/details?id=com.textile" target="_blank">
             <button class="button button--none">
             <span class="button__text">
@@ -159,26 +159,36 @@
     </div>
 </section>
 
+<section class="retry" id="retry">
+    <div class="container center">
+        <div class="retry__title">
+            <h2>Already installed Textile?</h2>
+        </div>
+        <p class="retry__subtitle">Once you've signed into the app, click here to retry the invite to shared photos.</p>
+        <div class="retry__buttons flex-d">
+
+            <a id="selfLink" target="_blank"
+                    href=""
+            >
+                <button class="button button--outline button__accept">
+                    <span class="button--outline__content">Accept Invite</span>
+                </button>
+            </a>
+        </div>
+    </div>
+</section>
+
 <footer class="footer">
     <div class="container">
         <div class="footer__content flex-d">
             <div class="footer__content__form">
-                <form action="https://textile.us14.list-manage.com/subscribe/post?u=5d6937984c33e82d45cf7961a&amp;id=ed364a47a3"
-                      method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form"
-                      class="validate footer__content__form__container" target="_blank" novalidate>
-
-                    <input placeholder="Enter your e-mail address" type="email" value="" name="EMAIL"
-                           class="required email footer__content__form__container__input" id="mce-EMAIL">
-                    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                    <input type="text" name="b_5d6937984c33e82d45cf7961a_ed364a47a3" tabindex="-1" value=""
-                           class="hide">
-                    <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe"
-                           class="button footer__content__form__container__button button button--primary">
-                </form>
-                <div class="footer__content__form__checkbox">
-                    <input class="footer__content__form__checkbox__input" id="check" type="checkbox">
-                    <label class="footer__content__form__checkbox__label" for="check">I want to receive news</label>
-                </div>
+                <a
+                        href="#store"
+                >
+                    <button class="anim button button--outline footer__content__form__invite">
+                        <span class="button--outline__content">Live Help on Slack</span>
+                    </button>
+                </a>
             </div>
             <ul class="footer__links flex-d flex-m">
                 <li class="footer__links__item">
@@ -198,8 +208,10 @@
         </div>
     </div>
 </footer>
-<script>
-
+<script type="text/javascript">
+  // Update the 'Accept invite' button to self url
+  var a = document.getElementById('selfLink');
+  a.href = window.location.href;
 </script>
 <script src="/statics/libs/smooth-scroll.js"></script>
 <script src="/statics/libs/bodymovin.min.js"></script>

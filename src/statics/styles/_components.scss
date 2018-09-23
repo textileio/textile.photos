@@ -267,10 +267,10 @@
 
 .steps {
 
-  padding: 72px 0;
+  padding: 32px 0;
 
   @media screen and (min-width: 768px) {
-    padding: 172px 0;
+    padding: 122px 0;
   }
 
   &__title {
@@ -387,10 +387,10 @@
 }
 
 .blog {
-  padding-bottom: 22px;
+  padding: 32px 0;
 
   @media screen and (min-width: 768px) {
-    padding-bottom: 32px;
+    padding: 92px 0;
   }
 
   &__title {
@@ -455,10 +455,10 @@
 }
 
 .tech {
-  padding: 36px 0;
+  padding: 32px 0;
 
   @media screen and (min-width: 1024px) {
-    padding: 50px 0;
+    padding: 92px 0;
   }
 
   &__title {
@@ -728,7 +728,19 @@
     }
   }
 
-  .buttonForStore {
+  &__buttons {
+
+    opacity: 0;
+    animation: fadeIn cubic-bezier(0.785, 0.135, 0.15, 0.86) .75s forwards;
+    animation-delay: .6s;
+
+    @media screen and (min-width: 768px) {
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  .button {
     &:first-child {
       margin-bottom: 25px;
 
@@ -834,6 +846,174 @@
   }
 }
 
+
+.store {
+  padding-bottom: 22px;
+
+  @media screen and (min-width: 768px) {
+    padding-bottom: 32px;
+  }
+
+  &__title {
+    margin-bottom: 24px;
+    overflow: hidden;
+
+    h2 {
+      opacity: 0;
+      animation: fadeInDown ease .75s forwards;
+    }
+
+  }
+
+  &__subtitle {
+    margin-bottom: 40px;
+    opacity: 0;
+    animation: fadeIn ease .75s forwards;
+    animation-delay: .5s;
+
+    @media screen and (min-width: 768px) {
+      max-width: 70%;
+      margin: 0 auto 56px;
+    }
+  }
+
+  &__buttons {
+
+    opacity: 0;
+    animation: fadeIn cubic-bezier(0.785, 0.135, 0.15, 0.86) .75s forwards;
+    animation-delay: .6s;
+
+    @media screen and (min-width: 768px) {
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  .button {
+    &:first-child {
+      margin-bottom: 25px;
+
+      @media screen and (min-width: 768px) {
+        margin-bottom: 0;
+        margin-right: 21px;
+      }
+    }
+
+    &__appstore {
+      background: url('../images/appstore_badge.svg') no-repeat;
+      background-size: cover;
+      width: 265px;
+      height: 64px;
+      position: relative;
+      z-index: 1;
+    }
+
+    &__playstore {
+      background: url('../images/playstore_badge.svg') no-repeat;
+      background-size: cover;
+      width: 265px;
+      height: 64px;
+      position: relative;
+      z-index: 1;
+    }
+  }
+
+
+  &__link {
+    width: 100%;
+    display: block;
+    &__ph {
+      font-size: 10px;
+      color: $link-blue;
+      text-decoration: underline;
+    }
+  }
+}
+
+.retry {
+  padding: 72px;
+
+  @media screen and (min-width: 768px) {
+    padding-bottom: 172px;
+  }
+
+  &__title {
+    margin-bottom: 24px;
+    overflow: hidden;
+
+    h2 {
+      opacity: 0;
+      animation: fadeInDown ease .75s forwards;
+    }
+
+  }
+
+  &__subtitle {
+    margin-bottom: 40px;
+    opacity: 0;
+    animation: fadeIn ease .75s forwards;
+    animation-delay: .5s;
+
+    @media screen and (min-width: 768px) {
+      max-width: 70%;
+      margin: 0 auto 56px;
+    }
+  }
+
+  &__buttons {
+
+    opacity: 0;
+    animation: fadeIn cubic-bezier(0.785, 0.135, 0.15, 0.86) .75s forwards;
+    animation-delay: .6s;
+
+    @media screen and (min-width: 768px) {
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  .button {
+    &:first-child {
+      margin-bottom: 25px;
+
+      @media screen and (min-width: 768px) {
+        margin-bottom: 0;
+        margin-right: 21px;
+      }
+    }
+
+    &__accept {
+      -webkit-appearance:     none;
+      -moz-appearance:        none;
+      -ms-appearance:         none;
+      -o-appearance:          none;
+      appearance:             none;
+      display: block;
+      border-radius: 30px;
+      margin-left: -2px;
+      margin-top: -15px;
+      font-family: 'Rubik', sans-serif;
+      font-size: 13px;
+      color: $blue;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      padding: 16px 24px;
+      width: 100%;
+    }
+  }
+
+
+  &__link {
+    width: 100%;
+    display: block;
+    &__ph {
+      font-size: 10px;
+      color: $link-blue;
+      text-decoration: underline;
+    }
+  }
+}
+
 .footer {
   &__content {
     padding: 56px 0;
@@ -845,101 +1025,46 @@
 
     &__form {
       padding-bottom: 51px;
-      max-width: 380px;
+      max-width: 280px;
       flex: 1;
       margin: 0 auto;
 
       @media screen and (min-width: 768px) {
         padding-bottom: 0;
         margin: initial;
+        max-width: 200px;
       }
 
-      &__checkbox {
-        margin: 16px 0 56px;
-        display: flex;
-        align-items: center;
-
-        @media screen and (min-width: 768px) {
-          margin-bottom: 0;
-        }
-
-        &__label {
-          padding-left: 24px;
-          font-size: 12px;
-        }
-        &__input {
-          background-color: transparent;
-          border: 1px solid #2E364E;
-          border-radius: 2px;
-          padding: 6px;
-          margin-right: 8px;
-
-          &:active {
-            background-color: transparentize($blue, 0.5);
-          }
-        }
+      &__invite {
+        -webkit-appearance:     none;
+        -moz-appearance:        none;
+        -ms-appearance:         none;
+        -o-appearance:          none;
+        appearance:             none;
+        display: block;
+        border-radius: 30px;
+        margin-left: -2px;
+        margin-top: -15px;
+        font-family: 'Rubik', sans-serif;
+        font-size: 13px;
+        color: $blue;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+        padding: 16px 24px;
+        width: 100%;
       }
 
       &__container {
         display: flex;
+        flex: 1;
 
-        &__input {
-          -webkit-appearance:     none;
-          -moz-appearance:        none;
-          -ms-appearance:         none;
-          -o-appearance:          none;
-          appearance:             none;
-          background: none;
-          border: 2px solid #CBD8E5;
-          padding-left: 22px;
-          border-radius: 30px 0 0 30px;
-          font-family: 'Rubik', sans-serif;
-          font-size: 16px;
-          color: #2E364E;
-          letter-spacing: 0;
-          display: block;
-          width: 100%;
-          -webkit-transition: all 0.3s ease;
-          -moz-transition: all 0.3s ease;
-          -o-transition: all 0.3s ease;
-          transition: all 0.3s ease;
-
-          &::placeholder {
-            font-family: 'Rubik', sans-serif;
-            font-size: 16px;
-            color: #2E364E;
-            letter-spacing: 0;
-            opacity: .6;
-          }
-
-          &:focus {
-            border-color: $blue;
-          }
-        }
-
-        &__button {
-          -webkit-appearance:     none;
-          -moz-appearance:        none;
-          -ms-appearance:         none;
-          -o-appearance:          none;
-          appearance:             none;
-          display: block;
-          border-radius: 0 30px 30px 0;
-          margin-left: -2px;
-          font-family: 'Rubik', sans-serif;
-          font-size: 13px;
-          color: #FFFFFF;
-          letter-spacing: 0.5px;
-          text-transform: uppercase;
-          padding: 16px 24px;
-        }
       }
     }
   }
 
   &__links {
 
-    margin-top: -34px;
+    margin-top: -15px;
 
     &__item {
       font-family: 'Rubik', sans-serif;

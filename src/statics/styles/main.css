@@ -792,10 +792,10 @@ p, label {
         transition: transform 0.3s ease; }
 
 .steps {
-  padding: 72px 0; }
+  padding: 32px 0; }
   @media screen and (min-width: 768px) {
     .steps {
-      padding: 172px 0; } }
+      padding: 122px 0; } }
   .steps__title {
     margin-bottom: 24px;
     overflow: hidden; }
@@ -877,10 +877,10 @@ p, label {
   padding-bottom: 10px; }
 
 .blog {
-  padding-bottom: 22px; }
+  padding: 32px 0; }
   @media screen and (min-width: 768px) {
     .blog {
-      padding-bottom: 32px; } }
+      padding: 92px 0; } }
   .blog__title {
     margin-bottom: 24px;
     overflow: hidden; }
@@ -923,10 +923,10 @@ p, label {
         margin-bottom: 32px; }
 
 .tech {
-  padding: 36px 0; }
+  padding: 32px 0; }
   @media screen and (min-width: 1024px) {
     .tech {
-      padding: 50px 0; } }
+      padding: 92px 0; } }
   .tech__title {
     margin-bottom: 24px;
     overflow: hidden; }
@@ -1113,20 +1113,28 @@ p, label {
       .cta__subtitle {
         max-width: 70%;
         margin: 0 auto 56px; } }
-  .cta .buttonForStore:first-child {
+  .cta__buttons {
+    opacity: 0;
+    animation: fadeIn cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.75s forwards;
+    animation-delay: .6s; }
+    @media screen and (min-width: 768px) {
+      .cta__buttons {
+        display: flex;
+        justify-content: center; } }
+  .cta .button:first-child {
     margin-bottom: 25px; }
     @media screen and (min-width: 768px) {
-      .cta .buttonForStore:first-child {
+      .cta .button:first-child {
         margin-bottom: 0;
         margin-right: 21px; } }
-  .cta .buttonForStore__appstore {
+  .cta .button__appstore {
     background: url("../images/appstore_badge.svg") no-repeat;
     background-size: cover;
     width: 265px;
     height: 64px;
     position: relative;
     z-index: 1; }
-  .cta .buttonForStore__playstore {
+  .cta .button__playstore {
     background: url("../images/playstore_badge.svg") no-repeat;
     background-size: cover;
     width: 265px;
@@ -1193,6 +1201,121 @@ p, label {
         text-transform: uppercase;
         padding: 16px 24px; }
 
+.store {
+  padding-bottom: 22px; }
+  @media screen and (min-width: 768px) {
+    .store {
+      padding-bottom: 32px; } }
+  .store__title {
+    margin-bottom: 24px;
+    overflow: hidden; }
+    .store__title h2 {
+      opacity: 0;
+      animation: fadeInDown ease .75s forwards; }
+  .store__subtitle {
+    margin-bottom: 40px;
+    opacity: 0;
+    animation: fadeIn ease .75s forwards;
+    animation-delay: .5s; }
+    @media screen and (min-width: 768px) {
+      .store__subtitle {
+        max-width: 70%;
+        margin: 0 auto 56px; } }
+  .store__buttons {
+    opacity: 0;
+    animation: fadeIn cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.75s forwards;
+    animation-delay: .6s; }
+    @media screen and (min-width: 768px) {
+      .store__buttons {
+        display: flex;
+        justify-content: center; } }
+  .store .button:first-child {
+    margin-bottom: 25px; }
+    @media screen and (min-width: 768px) {
+      .store .button:first-child {
+        margin-bottom: 0;
+        margin-right: 21px; } }
+  .store .button__appstore {
+    background: url("../images/appstore_badge.svg") no-repeat;
+    background-size: cover;
+    width: 265px;
+    height: 64px;
+    position: relative;
+    z-index: 1; }
+  .store .button__playstore {
+    background: url("../images/playstore_badge.svg") no-repeat;
+    background-size: cover;
+    width: 265px;
+    height: 64px;
+    position: relative;
+    z-index: 1; }
+  .store__link {
+    width: 100%;
+    display: block; }
+    .store__link__ph {
+      font-size: 10px;
+      color: #4264FB;
+      text-decoration: underline; }
+
+.retry {
+  padding: 72px; }
+  @media screen and (min-width: 768px) {
+    .retry {
+      padding-bottom: 172px; } }
+  .retry__title {
+    margin-bottom: 24px;
+    overflow: hidden; }
+    .retry__title h2 {
+      opacity: 0;
+      animation: fadeInDown ease .75s forwards; }
+  .retry__subtitle {
+    margin-bottom: 40px;
+    opacity: 0;
+    animation: fadeIn ease .75s forwards;
+    animation-delay: .5s; }
+    @media screen and (min-width: 768px) {
+      .retry__subtitle {
+        max-width: 70%;
+        margin: 0 auto 56px; } }
+  .retry__buttons {
+    opacity: 0;
+    animation: fadeIn cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.75s forwards;
+    animation-delay: .6s; }
+    @media screen and (min-width: 768px) {
+      .retry__buttons {
+        display: flex;
+        justify-content: center; } }
+  .retry .button:first-child {
+    margin-bottom: 25px; }
+    @media screen and (min-width: 768px) {
+      .retry .button:first-child {
+        margin-bottom: 0;
+        margin-right: 21px; } }
+  .retry .button__accept {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+    display: block;
+    border-radius: 30px;
+    margin-left: -2px;
+    margin-top: -15px;
+    font-family: 'Rubik', sans-serif;
+    font-size: 13px;
+    color: #2524FF;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    padding: 16px 24px;
+    width: 100%; }
+  .retry__link {
+    width: 100%;
+    display: block; }
+    .retry__link__ph {
+      font-size: 10px;
+      color: #4264FB;
+      text-decoration: underline; }
+
 .footer__content {
   padding: 56px 0;
   border-top: 1px solid rgba(203, 216, 229, 0.6); }
@@ -1201,79 +1324,37 @@ p, label {
       padding: 80px 0; } }
   .footer__content__form {
     padding-bottom: 51px;
-    max-width: 380px;
+    max-width: 280px;
     flex: 1;
     margin: 0 auto; }
     @media screen and (min-width: 768px) {
       .footer__content__form {
         padding-bottom: 0;
-        margin: initial; } }
-    .footer__content__form__checkbox {
-      margin: 16px 0 56px;
-      display: flex;
-      align-items: center; }
-      @media screen and (min-width: 768px) {
-        .footer__content__form__checkbox {
-          margin-bottom: 0; } }
-      .footer__content__form__checkbox__label {
-        padding-left: 24px;
-        font-size: 12px; }
-      .footer__content__form__checkbox__input {
-        background-color: transparent;
-        border: 1px solid #2E364E;
-        border-radius: 2px;
-        padding: 6px;
-        margin-right: 8px; }
-        .footer__content__form__checkbox__input:active {
-          background-color: rgba(37, 36, 255, 0.5); }
+        margin: initial;
+        max-width: 200px; } }
+    .footer__content__form__invite {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      -ms-appearance: none;
+      -o-appearance: none;
+      appearance: none;
+      display: block;
+      border-radius: 30px;
+      margin-left: -2px;
+      margin-top: -15px;
+      font-family: 'Rubik', sans-serif;
+      font-size: 13px;
+      color: #2524FF;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      padding: 16px 24px;
+      width: 100%; }
     .footer__content__form__container {
-      display: flex; }
-      .footer__content__form__container__input {
-        -webkit-appearance: none;
-        -moz-appearance: none;
-        -ms-appearance: none;
-        -o-appearance: none;
-        appearance: none;
-        background: none;
-        border: 2px solid #CBD8E5;
-        padding-left: 22px;
-        border-radius: 30px 0 0 30px;
-        font-family: 'Rubik', sans-serif;
-        font-size: 16px;
-        color: #2E364E;
-        letter-spacing: 0;
-        display: block;
-        width: 100%;
-        -webkit-transition: all 0.3s ease;
-        -moz-transition: all 0.3s ease;
-        -o-transition: all 0.3s ease;
-        transition: all 0.3s ease; }
-        .footer__content__form__container__input::placeholder {
-          font-family: 'Rubik', sans-serif;
-          font-size: 16px;
-          color: #2E364E;
-          letter-spacing: 0;
-          opacity: .6; }
-        .footer__content__form__container__input:focus {
-          border-color: #2524FF; }
-      .footer__content__form__container__button {
-        -webkit-appearance: none;
-        -moz-appearance: none;
-        -ms-appearance: none;
-        -o-appearance: none;
-        appearance: none;
-        display: block;
-        border-radius: 0 30px 30px 0;
-        margin-left: -2px;
-        font-family: 'Rubik', sans-serif;
-        font-size: 13px;
-        color: #FFFFFF;
-        letter-spacing: 0.5px;
-        text-transform: uppercase;
-        padding: 16px 24px; }
+      display: flex;
+      flex: 1; }
 
 .footer__links {
-  margin-top: -34px; }
+  margin-top: -15px; }
   .footer__links__item {
     font-family: 'Rubik', sans-serif;
     font-size: 14px;
