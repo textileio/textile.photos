@@ -9,6 +9,8 @@
   }
   if ('inviter' in params) {
     document.getElementsByClassName("invite-username")[0].innerText = params['inviter'];
+    document.getElementsByClassName("invite-username")[1].innerText = params['inviter'];
+    document.getElementsByClassName("invite-username")[2].innerText = params['inviter'];
   }
   if ('referral' in params) {
     document.getElementsByClassName("invite-code")[0].innerText = params['referral'];

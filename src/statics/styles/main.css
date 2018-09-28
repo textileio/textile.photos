@@ -1205,7 +1205,7 @@ p, label {
   padding-bottom: 22px; }
   @media screen and (min-width: 768px) {
     .store {
-      padding-bottom: 32px; } }
+      padding-bottom: 122px; } }
   .store__title {
     margin-bottom: 24px;
     overflow: hidden; }
@@ -1261,7 +1261,7 @@ p, label {
   padding: 72px; }
   @media screen and (min-width: 768px) {
     .retry {
-      padding-bottom: 172px; } }
+      padding-bottom: 22px; } }
   .retry__title {
     margin-bottom: 24px;
     overflow: hidden; }
