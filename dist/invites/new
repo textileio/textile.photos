@@ -75,15 +75,34 @@
         </div>
     </div>
 </nav>
+
+<section class="retry" id="retry">
+    <div class="container center">
+        <div class="retry__title">
+            <h2>Already installed Textile?</h2>
+        </div>
+        <p class="retry__subtitle">If you already have Textile on your phone, just click here to accept <span class="invite-username">your friend</span>'s invite in the app.</p>
+        <div class="retry__buttons flex-d">
+            <a id="selfLink" target="_blank"
+               href=""
+            >
+                <button class="button button--primary-animate">
+                    <span class="button--primary-animate__content">Accept Invite</span>
+                </button>
+            </a>
+        </div>
+    </div>
+</section>
+
 <section class="steps anim fadeInUp invites">
     <div class="container center">
         <div class="steps__title">
             <h2>
-                Congratulations, you're in!
+                New user instructions
             </h2>
         </div>
         <p class="steps__subtitle">
-            <span class="invite-username">Your friend</span> <span class="invite-type">wants to share a photo with you</span>, so we are giving you early access to the Textile app. Accept your invite in just three easy steps.
+            Congratulations, you're in! <span class="invite-username">Your friend</span> <span class="invite-type">wants to share a photo with you</span>, so we are giving you early access to the Textile app. Accept your invite in just three easy steps.
         </p>
         <div class="anim steps__content flex-d">
             <ul class="steps__content__list">
@@ -94,7 +113,7 @@
                     <div class="steps__content__list__item__text">
                         <h5 class="steps__content__list__item__title">Download the app
                         </h5>
-                        <p class="steps__content__list__item__subtitle">Use the links below to download and install Textile Photos.</p>
+                        <p class="steps__content__list__item__subtitle">See store links below. Use referral code <span class="invite-code">the code</span> to sign-up.</p>
                     </div>
                 </li>
                 <li data-step="1" class="steps__content__list__item flex-d flex-m">
@@ -102,9 +121,9 @@
                         <i class="icon icon--02"></i>
                     </div>
                     <div class="steps__content__list__item__text">
-                        <h5 class="steps__content__list__item__title">Click this invite</h5>
+                        <h5 class="steps__content__list__item__title">Setup your profile!</h5>
                         <p class="steps__content__list__item__subtitle">
-                            Or, use <span class="invite-code">the invite code</span> as your referral code during mobile sign-up.
+                            Have fun with your photos on the encrypted and decentralized web.
                         </p>
                     </div>
                 </li>
@@ -113,9 +132,9 @@
                         <i class="icon icon--03"></i>
                     </div>
                     <div class="steps__content__list__item__text">
-                        <h5 class="steps__content__list__item__title">Setup your profile!</h5>
+                        <h5 class="steps__content__list__item__title">Accept this invite</h5>
                         <p class="steps__content__list__item__subtitle">
-                            Have fun with your photos on the encrypted and decentralized web.
+                            Click Accept above to join <span class="invite-username">your friend</span>'s private thread.
                         </p>
                     </div>
                 </li>
@@ -158,26 +177,6 @@
         </div>
     </div>
 </section>
-
-<section class="retry" id="retry">
-    <div class="container center">
-        <div class="retry__title">
-            <h2>Already installed Textile?</h2>
-        </div>
-        <p class="retry__subtitle">Once you've signed into the app, click here to retry the invite to shared photos.</p>
-        <div class="retry__buttons flex-d">
-
-            <a id="selfLink" target="_blank"
-                    href=""
-            >
-                <button class="button button--outline button__accept">
-                    <span class="button--outline__content">Accept Invite</span>
-                </button>
-            </a>
-        </div>
-    </div>
-</section>
-
 <footer class="footer">
     <div class="container">
         <div class="footer__content flex-d">
@@ -208,10 +207,15 @@
         </div>
     </div>
 </footer>
+
 <script type="text/javascript">
   // Update the 'Accept invite' button to self url
   var a = document.getElementById('selfLink');
-  a.href = window.location.href;
+  var link = 'textile.photos' +
+      window.location.pathname +
+      window.location.search +
+      window.location.hash;
+  a.href = 'textile://' + link;
 </script>
 <script src="/statics/libs/smooth-scroll.js"></script>
 <script src="/statics/libs/bodymovin.min.js"></script>
